@@ -1,0 +1,427 @@
+{
+  "serverTypes": [
+    {
+      "id": "vps",
+      "name": "Cloud VPS Linux",
+      "tag": "Ready",
+      "desc": "Linux KVM VPS (Root Access)",
+      "icon": "fa-brands fa-linux"
+    },
+    {
+      "id": "rdp",
+      "name": "Windows RDP",
+      "tag": "Ready",
+      "desc": "Windows Server (Admin Remote Desktop)",
+      "icon": "fa-brands fa-windows"
+    }
+  ],
+  "plans": [
+    {
+      "id": "basic",
+      "name": "Basic Cloud VPS",
+      "tag": "Budget & Hemat",
+      "desc": "Cocok untuk testing, bot Telegram, VPN pribadi, proxy & web ringan. Harga super terjangkau!",
+      "warranty": "Garansi 7 hari (1x replace)"
+    },
+    {
+      "id": "premium",
+      "name": "Premium Private Cloud",
+      "tag": "Unshared Cloud",
+      "desc": "Pay As You Go Cloud VPS — Unshared Resources, Bandwidth Unmetered, NVMe SSD, Uptime 99.9%.",
+      "warranty": "Garansi penuh 30 hari & SLA Uptime 99.9%"
+    },
+    {
+      "id": "dedicated",
+      "name": "Bare Metal Dedicated Server",
+      "tag": "Enterprise Metal",
+      "desc": "Dual Intel Xeon fisik 100% milik Anda sendiri. 128 GB RAM, 2x 1TB SSD, Datacenter Tier 3 Jakarta.",
+      "warranty": "Garansi hardware replace instan, SLA Uptime 99.98% & Support Prioritas 24/7"
+    },
+    {
+      "id": "colocation",
+      "name": "Colocation Rack Space",
+      "tag": "Tier 3 Colocation",
+      "desc": "Sewa rack space 1U hingga 45U Full Rack di Datacenter Tier 3 Jakarta. Power 450W, 1 Gbps Local, IP Public & 24/7 Smart Hands.",
+      "warranty": "SLA Power & Network Uptime 99.98% & 24/7 Security"
+    }
+  ],
+  "basicResources": [
+    {
+      "id": "b-1gb-1c",
+      "ram": "1 GB",
+      "vcpu": "1 vCPU",
+      "storage": "25 GB SSD",
+      "transfer": "1,000 GB Transfer",
+      "priceVps": 20000,
+      "priceRdp": 30000
+    },
+    {
+      "id": "b-2gb-1c",
+      "ram": "2 GB",
+      "vcpu": "1 vCPU",
+      "storage": "50 GB SSD",
+      "transfer": "2,000 GB Transfer",
+      "priceVps": 30000,
+      "priceRdp": 40000
+    },
+    {
+      "id": "b-2gb-2c",
+      "ram": "2 GB",
+      "vcpu": "2 vCPUs",
+      "storage": "60 GB SSD",
+      "transfer": "3,000 GB Transfer",
+      "priceVps": 40000,
+      "priceRdp": 50000
+    },
+    {
+      "id": "b-4gb-2c",
+      "ram": "4 GB",
+      "vcpu": "2 vCPUs",
+      "storage": "80 GB SSD",
+      "transfer": "4,000 GB Transfer",
+      "priceVps": 55000,
+      "priceRdp": 65000
+    },
+    {
+      "id": "b-8gb-2c",
+      "ram": "8 GB",
+      "vcpu": "2 vCPUs",
+      "storage": "100 GB SSD",
+      "transfer": "5,000 GB Transfer",
+      "priceVps": 75000,
+      "priceRdp": 85000
+    },
+    {
+      "id": "b-8gb-4c",
+      "ram": "8 GB",
+      "vcpu": "4 vCPUs",
+      "storage": "160 GB SSD",
+      "transfer": "5,000 GB Transfer",
+      "priceVps": 95000,
+      "priceRdp": 105000
+    },
+    {
+      "id": "b-16gb-4c",
+      "ram": "16 GB",
+      "vcpu": "4 vCPUs",
+      "storage": "200 GB SSD",
+      "transfer": "8,000 GB Transfer",
+      "priceVps": 135000,
+      "priceRdp": 145000
+    },
+    {
+      "id": "b-16gb-8c",
+      "ram": "16 GB",
+      "vcpu": "8 vCPUs",
+      "storage": "320 GB SSD",
+      "transfer": "6,000 GB Transfer",
+      "priceVps": 175000,
+      "priceRdp": 185000
+    },
+    {
+      "id": "b-32gb-8c",
+      "ram": "32 GB",
+      "vcpu": "8 vCPUs",
+      "storage": "400 GB SSD",
+      "transfer": "10,000 GB Transfer",
+      "priceVps": 260000,
+      "priceRdp": 275000
+    }
+  ],
+  "premiumResources": [
+    {
+      "id": "p-1gb-1c",
+      "ram": "1 GB",
+      "vcpu": "1 Core",
+      "storage": "20 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 70000,
+      "priceRdp": 85000
+    },
+    {
+      "id": "p-2gb-2c",
+      "ram": "2 GB",
+      "vcpu": "2 Cores",
+      "storage": "40 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 130000,
+      "priceRdp": 145000
+    },
+    {
+      "id": "p-4gb-2c",
+      "ram": "4 GB",
+      "vcpu": "2 Cores",
+      "storage": "60 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 175000,
+      "priceRdp": 190000
+    },
+    {
+      "id": "p-4gb-4c",
+      "ram": "4 GB",
+      "vcpu": "4 Cores",
+      "storage": "80 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 235000,
+      "priceRdp": 255000
+    },
+    {
+      "id": "p-8gb-4c",
+      "ram": "8 GB",
+      "vcpu": "4 Cores",
+      "storage": "160 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 335000,
+      "priceRdp": 355000
+    },
+    {
+      "id": "p-16gb-4c",
+      "ram": "16 GB",
+      "vcpu": "4 Cores",
+      "storage": "200 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 475000,
+      "priceRdp": 500000
+    },
+    {
+      "id": "p-16gb-8c",
+      "ram": "16 GB",
+      "vcpu": "8 Cores",
+      "storage": "320 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 595000,
+      "priceRdp": 625000
+    },
+    {
+      "id": "p-32gb-8c",
+      "ram": "32 GB",
+      "vcpu": "8 Cores",
+      "storage": "400 GB SSD Storage",
+      "transfer": "Bandwidth Unmetered",
+      "priceVps": 880000,
+      "priceRdp": 910000
+    }
+  ],
+  "dedicatedResources": [
+    {
+      "id": "ds-2680-v4",
+      "name": "Dual Xeon E5 2680 V4",
+      "tag": "Most Popular",
+      "cpu": "28 Cores / 56 Threads",
+      "vcpu": "28C / 56T",
+      "ram": "128 GB DDR4 ECC",
+      "storage": "2 × 1 TB SSD",
+      "transfer": "Port 1 Gbps Unmetered",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 3300000,
+      "priceYearly": 33000000
+    },
+    {
+      "id": "ds-2670-v2",
+      "name": "Dual Xeon E5 2670 V2",
+      "tag": "Best Value",
+      "cpu": "20 Cores / 40 Threads",
+      "vcpu": "20C / 40T",
+      "ram": "128 GB ECC",
+      "storage": "2 × 1 TB SSD",
+      "transfer": "Port 1 Gbps Unmetered",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 3300000,
+      "priceYearly": 33000000
+    },
+    {
+      "id": "ds-2690-v4",
+      "name": "Dual Xeon E5 2690 V4",
+      "tag": "High Performance",
+      "cpu": "28 Cores / 56 Threads (High Clock)",
+      "vcpu": "28C / 56T",
+      "ram": "128 GB DDR4 ECC",
+      "storage": "2 × 1 TB SSD",
+      "transfer": "Port 1 Gbps Unmetered",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 3500000,
+      "priceYearly": 35000000
+    },
+    {
+      "id": "ds-2680-v3",
+      "name": "Dual Xeon E5 2680 V3",
+      "tag": "Power Server",
+      "cpu": "24 Cores / 48 Threads",
+      "vcpu": "24C / 48T",
+      "ram": "128 GB DDR4 ECC",
+      "storage": "2 × 1 TB SSD",
+      "transfer": "Port 1 Gbps Unmetered",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 3500000,
+      "priceYearly": 35000000
+    }
+  ],
+  "rackResources": [
+    {
+      "id": "rack-1u",
+      "name": "1U Rack Space",
+      "tag": "Single Server",
+      "uSize": "1U",
+      "power": "450 Watt",
+      "ipAllocated": "1 Usable IP Public",
+      "bandwidth": "Local 1 Gbps / Inter 500 Mbps Unlimited",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 950000,
+      "priceYearly": 9500000
+    },
+    {
+      "id": "rack-2u",
+      "name": "2U Rack Space",
+      "tag": "Medium Server",
+      "uSize": "2U",
+      "power": "450 Watt",
+      "ipAllocated": "/30 - 1 Usable IP Public",
+      "bandwidth": "Local 1 Gbps / Inter 500 Mbps Unlimited",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 2200000,
+      "priceYearly": 22000000
+    },
+    {
+      "id": "rack-4u",
+      "name": "4U Rack Space",
+      "tag": "Multi-Server",
+      "uSize": "4U",
+      "power": "450 Watt",
+      "ipAllocated": "/29 - 5 Usable IP Public",
+      "bandwidth": "Local 1 Gbps / Inter 500 Mbps Unlimited",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 2800000,
+      "priceYearly": 28000000
+    },
+    {
+      "id": "rack-10u",
+      "name": "10U Rack Space",
+      "tag": "Quarter Rack",
+      "uSize": "10U",
+      "power": "450 Watt",
+      "ipAllocated": "/29 - 5 Usable IP Public",
+      "bandwidth": "Local 1 Gbps / Inter 500 Mbps Unlimited",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 8500000,
+      "priceYearly": 85000000
+    },
+    {
+      "id": "rack-20u",
+      "name": "20U Rack Space",
+      "tag": "Half Rack",
+      "uSize": "20U",
+      "power": "450 Watt",
+      "ipAllocated": "/29 - 5 Usable IP Public",
+      "bandwidth": "Local 1 Gbps / Inter 500 Mbps Unlimited",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 23000000,
+      "priceYearly": 230000000
+    },
+    {
+      "id": "rack-45u",
+      "name": "45U Full Rack Space",
+      "tag": "Full Rack",
+      "uSize": "45U",
+      "power": "450 Watt",
+      "ipAllocated": "/29 - 5 Usable IP Public",
+      "bandwidth": "Local 1 Gbps / Inter 500 Mbps Unlimited",
+      "datacenter": "Jakarta (Tier 3 Data Center)",
+      "priceMonthly": 29000000,
+      "priceYearly": 290000000
+    }
+  ],
+  "billingCycles": [
+    {
+      "id": "monthly",
+      "name": "Bulanan",
+      "label": "1 Bulan",
+      "discount": "Harga Normal"
+    },
+    {
+      "id": "yearly",
+      "name": "Tahunan (Best Deal)",
+      "label": "12 Bulan",
+      "discount": "Hemat 2 Bulan (Bayar 10 Bln Saja)"
+    }
+  ],
+  "regions": [
+    {
+      "id": "sgp",
+      "name": "Singapore",
+      "code": "SGP",
+      "flag": "https://flagcdn.com/w40/sg.png",
+      "desc": "Ping terendah Indonesia"
+    },
+    {
+      "id": "usa",
+      "name": "United States",
+      "code": "USA",
+      "flag": "https://flagcdn.com/w40/us.png",
+      "desc": "Datacenter New York / SF"
+    },
+    {
+      "id": "nld",
+      "name": "Netherlands",
+      "code": "NLD",
+      "flag": "https://flagcdn.com/w40/nl.png",
+      "desc": "Eropa Amsterdam"
+    },
+    {
+      "id": "gbr",
+      "name": "United Kingdom",
+      "code": "GBR",
+      "flag": "https://flagcdn.com/w40/gb.png",
+      "desc": "London Datacenter"
+    },
+    {
+      "id": "deu",
+      "name": "Germany",
+      "code": "DEU",
+      "flag": "https://flagcdn.com/w40/de.png",
+      "desc": "Frankfurt Central"
+    },
+    {
+      "id": "jpn",
+      "name": "Japan",
+      "code": "JPN",
+      "flag": "https://flagcdn.com/w40/jp.png",
+      "desc": "Tokyo Low Latency"
+    }
+  ],
+  "osOptions": {
+    "vps": [
+      {
+        "id": "ubuntu",
+        "name": "Ubuntu",
+        "versions": ["Ubuntu 24.04 LTS", "Ubuntu 22.04 LTS"]
+      },
+      {
+        "id": "debian",
+        "name": "Debian",
+        "versions": ["Debian 12 Bookworm", "Debian 11 Bullseye"]
+      },
+      {
+        "id": "almalinux",
+        "name": "AlmaLinux",
+        "versions": ["AlmaLinux 9", "AlmaLinux 8"]
+      },
+      {
+        "id": "centos",
+        "name": "CentOS",
+        "versions": ["CentOS Stream 9", "CentOS 7"]
+      }
+    ],
+    "rdp": [
+      {
+        "id": "win-server",
+        "name": "Windows Server",
+        "versions": ["Windows Server 2022", "Windows Server 2019"]
+      },
+      {
+        "id": "win-client",
+        "name": "Windows Pro",
+        "versions": ["Windows 11 Pro", "Windows 10 Pro"]
+      }
+    ]
+  }
+}

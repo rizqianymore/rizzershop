@@ -1,0 +1,54 @@
+---
+import { Server, ShieldCheck, Zap, Headphones } from 'lucide-react';
+import { Card } from './ui/card';
+
+const features = [
+	{
+		icon: Zap,
+		title: 'Aktivasi Instan',
+		desc: 'VPS & kredensial akun dikirim cepat setelah konfirmasi pembayaran.'
+	},
+	{
+		icon: Server,
+		title: 'Uptime 99.9% NVMe',
+		desc: 'Infrastruktur cloud berkecepatan tinggi dengan port network hingga 1 Gbps.'
+	},
+	{
+		icon: ShieldCheck,
+		title: 'Garansi Server VPS',
+		desc: 'Jaminan ganti server baru (replace) jika ada kendala network selama masa sewa aktif.'
+	},
+	{
+		icon: Headphones,
+		title: 'Dukungan Fast Response',
+		desc: 'Bantuan teknis via WhatsApp / Telegram siap membimbing sampai tuntas.'
+	}
+];
+---
+
+<!-- 1 Window Fullscreen Features Section (No separator border) -->
+<section id="categories" class="flex min-h-screen w-full flex-col justify-center bg-black px-4 py-12 sm:px-6">
+	<div class="mx-auto w-full max-w-6xl">
+		<div class="text-center max-w-2xl mx-auto mb-10">
+			<!-- Mini Title (Normal-case, no uppercase) -->
+			<div class="text-xs font-medium text-blue-500 mb-1">Keunggulan Layanan</div>
+			<h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Kenapa Beli di RizzerShop?</h2>
+			<p class="mt-2 text-xs sm:text-sm text-zinc-400">Pusat layanan server VPS, RDP, dan akun premium terpercaya & transparan.</p>
+		</div>
+
+		<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+			{features.map((item) => {
+				const IconComponent = item.icon;
+				return (
+					<Card className="border-0 bg-zinc-950 p-5 transition hover:bg-zinc-900/60 shadow-none">
+						<div class="flex h-9 w-9 items-center justify-center rounded-md bg-black text-blue-400 mb-3">
+							<IconComponent className="h-4 w-4" />
+						</div>
+						<h3 class="text-sm font-semibold text-white">{item.title}</h3>
+						<p class="mt-2 text-xs text-zinc-400 leading-relaxed">{item.desc}</p>
+					</Card>
+				);
+			})}
+		</div>
+	</div>
+</section>

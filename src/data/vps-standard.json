@@ -1,0 +1,130 @@
+[
+  {
+    "id": "vps-starter",
+    "title": "Cloud VPS Starter",
+    "description": "Pilihan ekonomis untuk deploy bot Telegram, VPN pribadi, proxy, atau web hosting ringan.",
+    "category": "Standard VPS",
+    "specs": [
+      "1 vCPU Core",
+      "1 GB RAM",
+      "25 GB SSD Storage",
+      "1,000 GB Transfer",
+      "Pilihan OS Linux (Ubuntu/Debian/Alma/CentOS)",
+      "Garansi 7 Hari (1x replace)"
+    ],
+    "price": "Rp 20.000",
+    "period": "/bulan",
+    "tag": "Best Seller",
+    "iconClass": "fa-solid fa-server",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "vps-std-1g",
+        "name": "1 GB RAM / 1 vCPU",
+        "price": "Rp 20.000",
+        "period": "/bulan",
+        "specs": ["1 vCPU", "1 GB RAM", "25 GB SSD", "1,000 GB Transfer"]
+      },
+      {
+        "id": "vps-std-2g",
+        "name": "2 GB RAM / 1 vCPU",
+        "price": "Rp 35.000",
+        "period": "/bulan",
+        "specs": ["1 vCPU", "2 GB RAM", "50 GB SSD", "2,000 GB Transfer"]
+      },
+      {
+        "id": "vps-std-2g2c",
+        "name": "2 GB RAM / 2 vCPU",
+        "price": "Rp 45.000",
+        "period": "/bulan",
+        "specs": ["2 vCPU", "2 GB RAM", "60 GB SSD", "3,000 GB Transfer"]
+      },
+      {
+        "id": "vps-std-4g",
+        "name": "4 GB RAM / 2 vCPU",
+        "price": "Rp 65.000",
+        "period": "/bulan",
+        "specs": ["2 vCPU", "4 GB RAM", "80 GB SSD", "4,000 GB Transfer"]
+      },
+      {
+        "id": "vps-std-8g",
+        "name": "8 GB RAM / 4 vCPU",
+        "price": "Rp 120.000",
+        "period": "/bulan",
+        "specs": ["4 vCPU", "8 GB RAM", "160 GB SSD", "5,000 GB Transfer"]
+      },
+      {
+        "id": "vps-std-16g",
+        "name": "16 GB RAM / 8 vCPU",
+        "price": "Rp 220.000",
+        "period": "/bulan",
+        "specs": ["8 vCPU", "16 GB RAM", "320 GB SSD", "6,000 GB Transfer"]
+      }
+    ]
+  },
+  {
+    "id": "rdp-basic",
+    "title": "Windows RDP Starter",
+    "description": "Desktop Windows di cloud untuk browsing cepat, download/upload kencang, dan remote admin.",
+    "category": "Standard VPS",
+    "specs": [
+      "1 vCPU Core",
+      "1 GB RAM",
+      "25 GB SSD Storage",
+      "Windows Server 2022 / 2019 / Win 10",
+      "Akses Remote Desktop Protocol (RDP)",
+      "Garansi 7 Hari (1x replace)"
+    ],
+    "price": "Rp 30.000",
+    "period": "/bulan",
+    "tag": "RDP Hemat",
+    "iconClass": "fa-brands fa-windows",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "rdp-std-1g",
+        "name": "1 GB RAM / 1 vCPU",
+        "price": "Rp 30.000",
+        "period": "/bulan",
+        "specs": ["1 vCPU", "1 GB RAM", "25 GB SSD", "Windows Server 2022"]
+      },
+      {
+        "id": "rdp-std-2g",
+        "name": "2 GB RAM / 1 vCPU",
+        "price": "Rp 45.000",
+        "period": "/bulan",
+        "specs": ["1 vCPU", "2 GB RAM", "50 GB SSD", "Windows Server 2022 / Win 10"]
+      },
+      {
+        "id": "rdp-std-2g2c",
+        "name": "2 GB RAM / 2 vCPU",
+        "price": "Rp 58.000",
+        "period": "/bulan",
+        "specs": ["2 vCPU", "2 GB RAM", "60 GB SSD", "Windows Server 2022 / Win 10"]
+      },
+      {
+        "id": "rdp-std-4g",
+        "name": "4 GB RAM / 2 vCPU",
+        "price": "Rp 85.000",
+        "period": "/bulan",
+        "specs": ["2 vCPU", "4 GB RAM", "80 GB SSD", "Windows Server 2022 / Win 10"]
+      },
+      {
+        "id": "rdp-std-8g",
+        "name": "8 GB RAM / 4 vCPU",
+        "price": "Rp 145.000",
+        "period": "/bulan",
+        "specs": ["4 vCPU", "8 GB RAM", "160 GB SSD", "Windows Server 2022"]
+      },
+      {
+        "id": "rdp-std-16g",
+        "name": "16 GB RAM / 8 vCPU",
+        "price": "Rp 250.000",
+        "period": "/bulan",
+        "specs": ["8 vCPU", "16 GB RAM", "320 GB SSD", "Windows Server 2022"]
+      }
+    ]
+  }
+]

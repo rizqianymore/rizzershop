@@ -1,0 +1,91 @@
+[
+  {
+    "id": "acc-vidio-premier",
+    "title": "Vidio Platinum + Premier League",
+    "description": "Nonton siaran langsung Liga Inggris (EPL), BRI Liga 1, UCL, Timnas Indonesia, dan film box office tanpa jeda iklan.",
+    "category": "Akun Premium",
+    "specs": [
+      "Live Streaming Semua Match Liga Inggris (EPL)",
+      "Live BRI Liga 1 & Timnas Indonesia Match",
+      "UEFA Champions League & Liga Top Eropa",
+      "Original Series Vidio & Film Box Office",
+      "Kualitas Full HD 1080p Suara Jernih",
+      "Bisa Nonton di HP, Tablet, Laptop & Smart TV",
+      "Garansi Penuh Selama Masa Aktif"
+    ],
+    "price": "Rp 35.000",
+    "originalPrice": "Rp 89.000",
+    "discountPercent": "61%",
+    "period": "/bulan",
+    "tag": "Liga Inggris",
+    "iconClass": "fa-solid fa-futbol",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "vidio-platinum",
+        "name": "Platinum (Film & Series)",
+        "price": "Rp 25.000",
+        "originalPrice": "Rp 45.000",
+        "period": "/bulan",
+        "specs": ["Film & Series Box Office", "BRI Liga 1 & Sports", "All Devices", "Garansi 1 Bulan"]
+      },
+      {
+        "id": "vidio-premier-1m",
+        "name": "Platinum + Premier League (1 Bulan)",
+        "price": "Rp 35.000",
+        "originalPrice": "Rp 89.000",
+        "period": "/bulan",
+        "specs": ["Full Akses Liga Inggris (EPL)", "Semua Konten Platinum", "All Devices Termasuk TV", "Garansi 1 Bulan Penuh"]
+      },
+      {
+        "id": "vidio-premier-1y",
+        "name": "Premier League Musim Penuh (1 Tahun)",
+        "price": "Rp 185.000",
+        "originalPrice": "Rp 499.000",
+        "period": "/tahun",
+        "specs": ["Nonton 1 Musim Penuh Liga Inggris", "All Match EPL + UCL + Timnas", "Hemat Besar", "Garansi 1 Tahun"]
+      }
+    ]
+  },
+  {
+    "id": "acc-disney-hotstar",
+    "title": "Disney+ Hotstar Premium",
+    "description": "Streaming film Marvel Studios, Star Wars, Pixar, Disney Princess, National Geographic, dan drakor hits eksklusif.",
+    "category": "Akun Premium",
+    "specs": [
+      "Katalog Lengkap Marvel, Star Wars, Pixar & Disney",
+      "Drama Korea Populer & Serial Eksklusif",
+      "Kualitas Video Ultra HD 4K & Dolby Vision",
+      "Audio Jernih Dolby Atmos",
+      "Bisa di HP, Laptop, Tablet & Smart TV",
+      "Garansi Penuh Selama Masa Aktif"
+    ],
+    "price": "Rp 35.000",
+    "originalPrice": "Rp 65.000",
+    "discountPercent": "46%",
+    "period": "/bulan",
+    "tag": "Marvel & 4K",
+    "iconClass": "fa-solid fa-clapperboard",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "disney-1m",
+        "name": "1 Bulan (Private Profile)",
+        "price": "Rp 35.000",
+        "originalPrice": "Rp 65.000",
+        "period": "/bulan",
+        "specs": ["1 Profile Pribadi", "Kualitas 4K Ultra HD", "All Devices Termasuk TV", "Garansi 30 Hari"]
+      },
+      {
+        "id": "disney-3m",
+        "name": "3 Bulan (Hemat)",
+        "price": "Rp 95.000",
+        "originalPrice": "Rp 180.000",
+        "period": "/3 bulan",
+        "specs": ["Durasi 3 Bulan Penuh", "1 Profile Pribadi", "Kualitas 4K Ultra HD", "Garansi 3 Bulan"]
+      }
+    ]
+  }
+]

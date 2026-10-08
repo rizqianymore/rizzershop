@@ -1,0 +1,66 @@
+[
+  {
+    "id": "colocation-rack",
+    "title": "Colocation Server Rack Space",
+    "description": "Titip server fisik Anda di Datacenter Tier 3 Jakarta. Power 450W, IP Public, 1 Gbps Local & bandwidth unlimited.",
+    "category": "Colocation Rack",
+    "specs": [
+      "Ukuran Rack 1U hingga 45U Full Rack",
+      "Power Allocation 450 Watt per unit",
+      "Allocated IP Public Usable /30 & /29",
+      "Local Bandwidth Up to 1 Gbps & Inter 500 Mbps",
+      "Datacenter Tier 3 Cyber Building Jakarta",
+      "24/7 Smart Hands & Security Monitoring"
+    ],
+    "price": "Rp 950.000",
+    "period": "/bulan",
+    "tag": "Tier 3 Colocation",
+    "iconClass": "fa-solid fa-network-wired",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "rack-1u",
+        "name": "1U Rack Space",
+        "price": "Rp 950.000",
+        "period": "/bulan",
+        "specs": ["1U Rack", "450 Watt", "1 IP Public", "1 Gbps Local / 500 Mbps Inter"]
+      },
+      {
+        "id": "rack-2u",
+        "name": "2U Rack Space",
+        "price": "Rp 2.200.000",
+        "period": "/bulan",
+        "specs": ["2U Rack", "450 Watt", "/30 (1 IP Public)", "1 Gbps Local / 500 Mbps Inter"]
+      },
+      {
+        "id": "rack-4u",
+        "name": "4U Rack Space",
+        "price": "Rp 2.800.000",
+        "period": "/bulan",
+        "specs": ["4U Rack", "450 Watt", "/29 (5 IP Public)", "1 Gbps Local / 500 Mbps Inter"]
+      },
+      {
+        "id": "rack-10u",
+        "name": "10U Rack Space",
+        "price": "Rp 8.500.000",
+        "period": "/bulan",
+        "specs": ["10U Rack", "450 Watt", "/29 (5 IP Public)", "1 Gbps Local / 500 Mbps Inter"]
+      },
+      {
+        "id": "rack-20u",
+        "name": "20U Rack Space",
+        "price": "Rp 23.000.000",
+        "period": "/bulan",
+        "specs": ["20U Half Rack", "450 Watt", "/29 (5 IP Public)", "1 Gbps Local / 500 Mbps Inter"]
+      },
+      {
+        "id": "rack-45u",
+        "name": "45U Full Rack Space",
+        "price": "Rp 29.000.000",
+        "period": "/bulan",
+        "specs": ["45U Full Rack", "450 Watt", "/29 (5 IP Public)", "1 Gbps Local / 500 Mbps Inter"]
+      }
+    ]
+  }
+]

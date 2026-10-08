@@ -1,0 +1,49 @@
+[
+  {
+    "id": "acc-google-one-2tb",
+    "title": "Google One Storage (2 TB / 100 GB)",
+    "description": "Upgrade kapasitas penyimpanan Google Drive, Gmail, dan Google Photos tanpa hapus file kenangan Anda.",
+    "category": "Akun Premium",
+    "specs": [
+      "Kapasitas 100 GB hingga 2.000 GB (2 TB)",
+      "Bisa Menggunakan Email Pribadi (@gmail.com)",
+      "Foto & Video Tersimpan Kualitas Asli (Original Quality)",
+      "Fitur Magic Editor & Tool AI Google Photos Unlocked",
+      "Garansi Penuh Selama Masa Aktif"
+    ],
+    "price": "Rp 35.000",
+    "originalPrice": "Rp 135.000",
+    "discountPercent": "74%",
+    "period": "/tahun",
+    "tag": "Drive 2TB",
+    "iconClass": "fa-brands fa-google-drive",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "gdrive-100gb",
+        "name": "100 GB (1 Tahun)",
+        "price": "Rp 35.000",
+        "originalPrice": "Rp 135.000",
+        "period": "/tahun",
+        "specs": ["100 GB Cloud Storage", "Email Pribadi Sendiri", "Drive, Gmail, Photos", "Garansi 1 Tahun"]
+      },
+      {
+        "id": "gdrive-200gb",
+        "name": "200 GB (1 Tahun)",
+        "price": "Rp 55.000",
+        "originalPrice": "Rp 215.000",
+        "period": "/tahun",
+        "specs": ["200 GB Cloud Storage", "Email Pribadi Sendiri", "Drive, Gmail, Photos", "Garansi 1 Tahun"]
+      },
+      {
+        "id": "gdrive-2tb",
+        "name": "2 TB / 2000 GB (1 Tahun)",
+        "price": "Rp 95.000",
+        "originalPrice": "Rp 435.000",
+        "period": "/tahun",
+        "specs": ["2.000 GB Cloud Storage", "Email Pribadi Sendiri", "Google Photos Magic AI", "Garansi 1 Tahun"]
+      }
+    ]
+  }
+]

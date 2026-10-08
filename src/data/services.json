@@ -1,0 +1,247 @@
+[
+  {
+    "id": "svc-pterodactyl-game",
+    "title": "Jasa Setup Panel Game Server (Pterodactyl)",
+    "description": "Jasa instalasi panel Pterodactyl, Wings node, dan siap pakai untuk server Minecraft, SA:MP, FiveM, CS:GO, atau Discord bot di VPS Anda.",
+    "category": "Jasa & Setup",
+    "specs": [
+      "Instalasi Panel Pterodactyl Versi Terbaru",
+      "Konfigurasi Wings Node & SSL Daemon Gratis",
+      "Setup Database MariaDB & Redis Caching",
+      "Support Egg Game: Minecraft, SA:MP, FiveM, Bot",
+      "Garansi Setup Berhasil 100% & Bimbingan Penggunaan"
+    ],
+    "price": "Rp 35.000",
+    "originalPrice": "Rp 120.000",
+    "discountPercent": "71%",
+    "period": "/setup",
+    "tag": "Game Server",
+    "iconClass": "fa-solid fa-gamepad",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "ptero-basic",
+        "name": "Standard (Panel Only)",
+        "price": "Rp 35.000",
+        "originalPrice": "Rp 120.000",
+        "period": "/setup",
+        "specs": ["Install Panel Pterodactyl", "Setup Database & SSL", "1 Node Wings Siap Pakai", "Garansi Berhasil"]
+      },
+      {
+        "id": "ptero-complete",
+        "name": "Lengkap (Panel + Wings + Game Eggs)",
+        "price": "Rp 55.000",
+        "originalPrice": "Rp 180.000",
+        "period": "/setup",
+        "specs": ["Install Panel & Multiple Nodes", "Input Template Egg Minecraft/SAMP/Bot", "Firewall & Port Mapping", "Bimbingan Sampai Server Jalan"]
+      },
+      {
+        "id": "ptero-custom-theme",
+        "name": "VIP (Theme Billing / Addons)",
+        "price": "Rp 75.000",
+        "originalPrice": "Rp 250.000",
+        "period": "/setup",
+        "specs": ["Panel + Wings + Custom Theme Modern", "Optimasi Keamanan Anti-DDoS", "Auto Backup Schedule", "Garansi & Support Prioritas"]
+      }
+    ]
+  },
+  {
+    "id": "svc-webserver-wordpress",
+    "title": "Jasa Setup Web Server (Nginx / OpenLiteSpeed / WordPress)",
+    "description": "Jasa konfigurasi web server production performa tinggi di Linux VPS. Loading secepat kilat dengan Nginx / OpenLiteSpeed, Redis, dan SSL gratis.",
+    "category": "Jasa & Setup",
+    "specs": [
+      "Instalasi Nginx / OpenLiteSpeed Enterprise Ready",
+      "Setup PHP-FPM Terbaru & MySQL/MariaDB",
+      "Instalasi WordPress + LiteSpeed Cache / Redis",
+      "Auto SSL HTTPS Let's Encrypt Selamanya",
+      "Optimasi Keamanan UFW Firewall & Fail2ban",
+      "Garansi Skor PageSpeed Hijau & Uji Beban"
+    ],
+    "price": "Rp 50.000",
+    "originalPrice": "Rp 150.000",
+    "discountPercent": "67%",
+    "period": "/setup",
+    "tag": "High Performance",
+    "iconClass": "fa-solid fa-server",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "web-basic",
+        "name": "Basic Stack (LEMP / Nginx + SSL)",
+        "price": "Rp 50.000",
+        "originalPrice": "Rp 150.000",
+        "period": "/setup",
+        "specs": ["Nginx Web Server", "PHP & MySQL Setup", "Domain Mapping & SSL Gratis", "UFW Firewall Security"]
+      },
+      {
+        "id": "web-wordpress-fast",
+        "name": "WordPress Ngebut (OpenLiteSpeed + Redis)",
+        "price": "Rp 75.000",
+        "originalPrice": "Rp 220.000",
+        "period": "/setup",
+        "specs": ["OpenLiteSpeed Web Server", "WordPress Clean Install", "LSCache + Redis Object Cache", "Optimasi Loading Sub-1 Detik"]
+      },
+      {
+        "id": "web-full-production",
+        "name": "Full Production + Anti-Bruteforce",
+        "price": "Rp 100.000",
+        "originalPrice": "Rp 300.000",
+        "period": "/setup",
+        "specs": ["Web Server + WP + Cloudflare Setup", "Hardening Security & Anti-Malware", "Auto Daily Database Backup", "Garansi Setup & Konsultasi 7 Hari"]
+      }
+    ]
+  },
+  {
+    "id": "svc-forex-bot",
+    "title": "Jasa Install Bot Trading Forex (MT4 / MT5) di RDP",
+    "description": "Jasa pemasangan Expert Advisor (EA), robot trading forex, custom indicator, dan setting auto-restart di Windows RDP agar berjalan 24 jam non-stop.",
+    "category": "Jasa & Setup",
+    "specs": [
+      "Instalasi MetaTrader 4 (MT4) atau MetaTrader 5 (MT5)",
+      "Pemasangan Expert Advisor (EA) / Robot Trading",
+      "Setting VPS Auto-Login & Auto-Start MT4 jika Restart",
+      "Optimasi Resource RDP (Low CPU & RAM Usage)",
+      "Garansi Robot Berjalan Lancar & Koneksi Stabil 24/7"
+    ],
+    "price": "Rp 30.000",
+    "originalPrice": "Rp 90.000",
+    "discountPercent": "67%",
+    "period": "/setup",
+    "tag": "Forex Trader",
+    "iconClass": "fa-solid fa-chart-line",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "forex-single",
+        "name": "Single MT4/MT5 + 1 Robot EA",
+        "price": "Rp 30.000",
+        "originalPrice": "Rp 90.000",
+        "period": "/setup",
+        "specs": ["Install 1 Terminal MT4/MT5", "Setup 1 File EA/Indicator", "Cek Koneksi Broker", "Garansi Berjalan"]
+      },
+      {
+        "id": "forex-multi-terminal",
+        "name": "Multi-Terminal (Hingga 4 MT4/MT5)",
+        "price": "Rp 40.000",
+        "originalPrice": "Rp 120.000",
+        "period": "/setup",
+        "specs": ["Setup 2-4 Terminal MT4/MT5 Sekaligus", "Pemasangan EA di Tiap Terminal", "Optimasi Memory RAM RDP", "Garansi Stabil"]
+      },
+      {
+        "id": "forex-full-pack",
+        "name": "Full Pack Auto-Start & Notifikasi",
+        "price": "Rp 50.000",
+        "originalPrice": "Rp 150.000",
+        "period": "/setup",
+        "specs": ["Multi MT4/MT5 + Unlimited EA", "Auto-Restart Script jika Crash", "Setup Notifikasi Telegram / Mobile", "Bimbingan Operasional Lengkap"]
+      }
+    ]
+  },
+  {
+    "id": "svc-cleaning-malware-wordpress",
+    "title": "Jasa Optimasi & Cleaning Malware WordPress",
+    "description": "Jasa pembersihan malware, backdoor, redirect spam judi/iklan, webshell, dan un-blacklist Google / hosting pada website WordPress. Lengkap dengan hardening security dan optimasi speed.",
+    "category": "Jasa & Setup",
+    "specs": [
+      "Scan Mendalam Core File, Theme, Plugin & Database",
+      "Pembersihan Backdoor, Trojan, Webshell & Script Injeksi",
+      "Hapus Redirect Spam Judi Online & Pop-up Liar",
+      "Request Review Google Safe Browsing / De-Blacklist",
+      "Hardening Keamanan WordPress & Firewall Anti-Bruteforce",
+      "Optimasi Loading Speed & Caching",
+      "Garansi Bersih 100% & Garansi Relapse 30 Hari"
+    ],
+    "price": "Rp 75.000",
+    "originalPrice": "Rp 250.000",
+    "discountPercent": "70%",
+    "period": "/website",
+    "tag": "WP Security",
+    "iconClass": "fa-solid fa-shield-virus",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "malware-clean-standard",
+        "name": "Cleaning Malware Standard",
+        "price": "Rp 75.000",
+        "originalPrice": "Rp 250.000",
+        "period": "/website",
+        "specs": [
+          "Pembersihan File Jahat & Backdoor",
+          "Fix Redirect Spam & Error Database",
+          "Update Core, Plugin & Theme ke Versi Bersih",
+          "Garansi 14 Hari"
+        ]
+      },
+      {
+        "id": "malware-clean-pro",
+        "name": "Cleaning + Hardening + Speed Optimasi",
+        "price": "Rp 125.000",
+        "originalPrice": "Rp 350.000",
+        "period": "/website",
+        "specs": [
+          "Full Deep Cleaning Malware & Database Injection",
+          "De-Blacklist Google Safe Browsing & Anti-Virus",
+          "Pemasangan Security WAF Firewall & Anti-Bruteforce",
+          "Optimasi Loading Speed Caching",
+          "Garansi Penuh 30 Hari Bebas Infeksi Ulang"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "svc-mailserver-smtp-relay",
+    "title": "Jasa Setup Mail Server & SMTP Relay",
+    "description": "Jasa instalasi mail server profesional di VPS atau konfigurasi SMTP Relay pihak ketiga (SendGrid, Mailgun, Amazon SES, Brevo) agar email masuk Inbox 100% tanpa nyasar ke folder Spam.",
+    "category": "Jasa & Setup",
+    "specs": [
+      "Konfigurasi Record DNS: SPF, DKIM, DMARC, MX, PTR/rDNS",
+      "Setup SMTP Relay (SendGrid / Mailgun / Amazon SES / Brevo)",
+      "Mail-tester Score 10/10 Inbox Guarantee",
+      "Integrasi ke WordPress / Website / Billing System",
+      "Support Mail Server Mandiri (CyberPanel / Mailcow / Postfix)",
+      "Garansi Email Tembus Inbox & Bebas Blacklist IP"
+    ],
+    "price": "Rp 50.000",
+    "originalPrice": "Rp 150.000",
+    "discountPercent": "67%",
+    "period": "/setup",
+    "tag": "High Delivery",
+    "iconClass": "fa-solid fa-envelope-circle-check",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "smtp-relay-saas",
+        "name": "Setup SMTP Relay (SendGrid / Brevo / Mailgun)",
+        "price": "Rp 50.000",
+        "originalPrice": "Rp 150.000",
+        "period": "/setup",
+        "specs": [
+          "Setting Akun SMTP Relay Pihak Ke-3",
+          "Konfigurasi SPF, DKIM, DMARC di Domain",
+          "Integrasi ke WordPress / Script Notifikasi",
+          "Testing Sampai Masuk Inbox & Score Hijau"
+        ]
+      },
+      {
+        "id": "smtp-vps-mailcow",
+        "name": "Full Mail Server Mandiri di VPS (Mailcow / Postfix)",
+        "price": "Rp 100.000",
+        "originalPrice": "Rp 300.000",
+        "period": "/setup",
+        "specs": [
+          "Install Mailcow Docker / CyberPanel Mail Server",
+          "Setup Webmail (Roundcube / SOGo) + SSL",
+          "Konfigurasi Reverse DNS (PTR), SPF, DKIM, DMARC",
+          "Antivirus & Anti-Spam (Rspamd) Filtering",
+          "Garansi Delivery & Bimbingan Penggunaan"
+        ]
+      }
+    ]
+  }
+]

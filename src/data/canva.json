@@ -1,0 +1,40 @@
+[
+  {
+    "id": "acc-canva-pro",
+    "title": "Canva Pro (Team / Edu / Private)",
+    "description": "Buka jutaan template premium, foto, audio, video, magic AI switch, dan download transparan tanpa batas.",
+    "category": "Akun Premium",
+    "specs": [
+      "100+ Juta Foto, Video & Grafis Premium",
+      "Magic Switch, Background Remover AI 1-Klik",
+      "Brand Kit & Custom Font Upload",
+      "Cloud Storage 1 TB",
+      "Bisa Pakai Email Pribadi Sendiri",
+      "Garansi Penuh Selama Masa Berlangganan"
+    ],
+    "price": "Rp 25.000",
+    "originalPrice": "Rp 95.000",
+    "discountPercent": "74%",
+    "period": "/tahun",
+    "tag": "Best Creative",
+    "iconClass": "fa-solid fa-palette",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "canva-1y",
+        "name": "1 Tahun (Email Sendiri)",
+        "price": "Rp 25.000",
+        "period": "/tahun",
+        "specs": ["Durasi 1 Tahun Penuh", "Invite ke Email Pribadi", "Semua Fitur Pro Unlocked", "Garansi 1 Tahun"]
+      },
+      {
+        "id": "canva-lifetime",
+        "name": "Lifetime (Anti Rame)",
+        "price": "Rp 45.000",
+        "period": "/lifetime",
+        "specs": ["Akses Selamanya", "Invite ke Email Pribadi", "Brand Kit & Cloud Storage", "Garansi Replace"]
+      }
+    ]
+  }
+]

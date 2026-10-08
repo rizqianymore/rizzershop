@@ -1,0 +1,64 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { ProductCatalog } from '../../components/ProductCatalog';
+import { productsData } from '../../data/products';
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: 'https://rizzercloud.web.id'
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Katalog Produk',
+			item: 'https://rizzercloud.web.id/produk'
+		}
+	]
+};
+
+const collectionSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'CollectionPage',
+	name: 'Katalog Layanan VPS & Akun Digital RizzerShop',
+	description: 'Daftar lengkap layanan Cloud VPS, RDP Botting, dan Akun Premium resmi bergaransi.',
+	url: 'https://rizzercloud.web.id/produk'
+};
+---
+
+<Layout 
+	title="Katalog Lengkap VPS, RDP & Akun Digital Premium - RizzerShop"
+	description="Daftar lengkap paket Cloud VPS Linux, Windows RDP Botting, Dedicated Server, Lisensi Software, dan Akun Premium dengan harga bersahabat dan aktivasi instan."
+	tags={['Katalog VPS', 'Katalog RDP', 'Akun Premium Murah', 'Beli VPS Murah', 'Cloud Server Indonesia', 'RizzerShop']}
+>
+	<script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+	<script is:inline type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+
+	<Navbar />
+
+	<main class="min-h-screen bg-black px-4 py-12 sm:px-6">
+		<div class="mx-auto max-w-6xl">
+			<!-- Header Title -->
+			<div class="mb-10 text-center sm:text-left">
+				<div class="text-xs font-medium text-blue-500 mb-1">Daftar Katalog</div>
+				<h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl bg-gradient-to-r from-white via-blue-100 to-blue-500 bg-clip-text text-transparent">
+					Semua Layanan VPS & Akun Digital
+				</h1>
+				<p class="mt-2 text-xs sm:text-sm text-zinc-400 max-w-2xl">
+					Cari dan pilih paket spesifikasi cloud server, RDP botting, atau akun premium yang kamu butuhkan dengan harga bersahabat dan order instan via WhatsApp.
+				</p>
+			</div>
+
+			<!-- Interactive Catalog with 1-Card VPS/RDP Picker & Other Products -->
+			<ProductCatalog client:load products={productsData} />
+		</div>
+	</main>
+
+	<Footer />
+</Layout>

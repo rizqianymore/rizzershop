@@ -1,0 +1,25 @@
+[
+  {
+    "id": "proxy-residential-rotasi",
+    "title": "Proxy Residential 1 GB",
+    "description": "Proxy Residential IP asli perumahan kuota 1 GB. Support rotasi otomatis per request atau sticky session, high trust score, anti-ban, dan akses 50M+ pool IP.",
+    "category": "Proxy",
+    "specs": [
+      "Kuota 1 GB Bandwidth (Aktif 30 Hari)",
+      "Real Residential IP Pool Global & Indonesia",
+      "Pilihan Rotasi Per Request atau Sticky 10-30 Menit",
+      "Protokol Lengkap HTTP, HTTPS, SOCKS5",
+      "High Trust Score & Anti-Detect",
+      "Support Botting, Scraping, Shopee, FB Ads, TikTok",
+      "Garansi Kuota Utuh & Aktif Penuh"
+    ],
+    "price": "Rp 45.000",
+    "originalPrice": "Rp 75.000",
+    "discountPercent": "40%",
+    "period": "/1 GB",
+    "tag": "Residential IP",
+    "iconClass": "fa-solid fa-arrows-rotate",
+    "available": true,
+    "hasWarranty": true
+  }
+]

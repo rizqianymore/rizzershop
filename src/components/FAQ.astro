@@ -1,0 +1,20 @@
+---
+import { FAQAccordion } from './FAQAccordion';
+---
+
+<!-- FAQ Section -->
+<section id="faq" class="flex min-h-screen w-full flex-col justify-center bg-black px-4 py-12 sm:px-6">
+	<div class="mx-auto w-full max-w-3xl">
+		<div class="text-center max-w-2xl mx-auto mb-10">
+			<div class="text-xs font-medium text-blue-500 mb-1">FAQ & Pertanyaan</div>
+			<h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Pertanyaan yang Sering Diajukan</h2>
+			<p class="mt-2 text-xs sm:text-sm text-zinc-400">Temukan jawaban cepat seputar VPS, RDP, akun premium, dan proses order.</p>
+		</div>
+
+		<FAQAccordion client:load />
+
+		<div class="mt-8 text-center text-xs text-zinc-500">
+			Punya pertanyaan lain? <a href="https://wa.me/6281385173654" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">Tanya langsung ke CS</a>
+		</div>
+	</div>
+</section>

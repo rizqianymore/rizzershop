@@ -1,0 +1,41 @@
+---
+import { ShoppingCart, MessageSquare, CheckCircle, Truck } from 'lucide-react';
+---
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="flex min-h-screen w-full flex-col justify-center bg-black px-4 py-12 sm:px-6">
+	<div class="mx-auto w-full max-w-6xl">
+		<div class="text-center max-w-2xl mx-auto mb-10">
+			<div class="text-xs font-medium text-blue-500 mb-1">Cara Pemesanan</div>
+			<h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Mudah, Cepat, & Otomatis</h2>
+			<p class="mt-2 text-xs sm:text-sm text-zinc-400">Proses beli VPS, RDP, atau akun premium hanya butuh beberapa langkah.</p>
+		</div>
+
+		<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+			{[
+				{ icon: ShoppingCart, step: '1', title: 'Pilih Produk', desc: 'Pilih paket VPS, RDP, atau akun premium yang dibutuhkan.' },
+				{ icon: MessageSquare, step: '2', title: 'Order via WhatsApp', desc: 'Klik Beli, arahkan ke WhatsApp CS untuk konfirmasi.' },
+				{ icon: CheckCircle, step: '3', title: 'Bayar & Konfirmasi', desc: 'Transfer via bank/ewallet, kirim bukti ke CS.' },
+				{ icon: Truck, step: '4', title: 'Aktivasi Instan', desc: 'Kredensial/server dikirim otomatis ke WhatsApp/Email.' },
+			].map((item, i) => (
+				<div data-astro-key={i} class="group flex flex-col bg-zinc-950 rounded-lg p-5 border border-zinc-800/80 hover:border-zinc-700 transition-colors relative">
+					<div class="flex items-center justify-between mb-3">
+						<div class="flex h-9 w-9 items-center justify-center rounded-md bg-black text-blue-400 group-hover:text-blue-300 transition-colors">
+							<item.icon className="h-4 w-4" />
+						</div>
+						<span class="text-xs font-bold text-blue-500 bg-blue-950/40 px-2 py-0.5 rounded">{item.step}</span>
+					</div>
+					<h3 class="text-sm font-semibold text-white mb-1">{item.title}</h3>
+					<p class="text-xs text-zinc-400 leading-relaxed">{item.desc}</p>
+				</div>
+			))}
+		</div>
+
+		<div class="mt-10 text-center">
+			<a href="https://wa.me/6281385173654" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-500">
+				<MessageSquare className="h-4 w-4" />
+				<span>Mulai Order Sekarang</span>
+			</a>
+		</div>
+	</div>
+</section>

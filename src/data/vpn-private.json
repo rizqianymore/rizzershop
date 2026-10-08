@@ -1,0 +1,64 @@
+[
+  {
+    "id": "dewavpn-cloud-private",
+    "title": "DewaVPN Private Cloud",
+    "description": "VPN Cloud Private premium dengan 1000+ server di 38 negara. Support multi-protokol, unblock Netflix & streaming lancar hingga 10 device.",
+    "category": "VPN Private",
+    "specs": [
+      "1000+ Server in 38 Countries",
+      "Protokol: OpenVPN, L2TP, PPTP, UDP, IKEv2",
+      "Unlimited Bandwidth Tanpa FUP",
+      "Support Netflix & Streaming HD/4K",
+      "Maksimal 10 Devices Sekaligus",
+      "No Logs Policy & Enkripsi Standar Militer",
+      "Garansi Aktif & Support 24/7"
+    ],
+    "price": "Rp 75.000",
+    "period": "/bulan",
+    "tag": "10 Devices",
+    "iconClass": "fa-solid fa-shield-halved",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "dewavpn-1m",
+        "name": "1 Bulan (10 Devices)",
+        "price": "Rp 75.000",
+        "period": "/bulan",
+        "specs": [
+          "Durasi 1 Bulan Penuh",
+          "1000+ Server di 38 Negara",
+          "OpenVPN, L2TP, PPTP, UDP, IKEv2",
+          "Unlimited Bandwidth & Support Netflix",
+          "Bisa Dipakai Hingga 10 Devices"
+        ]
+      },
+      {
+        "id": "dewavpn-3m",
+        "name": "3 Bulan (Hemat 15%)",
+        "price": "Rp 195.000",
+        "period": "/3 bulan",
+        "specs": [
+          "Durasi 3 Bulan (Rp 65rb/bln)",
+          "1000+ Server di 38 Negara",
+          "OpenVPN, L2TP, PPTP, UDP, IKEv2",
+          "Unlimited Bandwidth & Support Streaming",
+          "Bisa Dipakai Hingga 10 Devices"
+        ]
+      },
+      {
+        "id": "dewavpn-1y",
+        "name": "1 Tahun (Best Value)",
+        "price": "Rp 650.000",
+        "period": "/tahun",
+        "specs": [
+          "Durasi 12 Bulan (Hemat Besar)",
+          "1000+ Server di 38 Negara",
+          "Full Akses Semua Protokol",
+          "Unlimited Bandwidth & Support Netflix/Streaming",
+          "Bisa Dipakai Hingga 10 Devices"
+        ]
+      }
+    ]
+  }
+]

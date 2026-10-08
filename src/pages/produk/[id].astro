@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import ProductDetailOrder from '../../components/ProductDetailOrder.astro';
+import { productsData, type ProductItem } from '../../data/products';
+
+export function getStaticPaths() {
+	return productsData.map((product) => ({
+		params: { id: product.id },
+		props: { product },
+	}));
+}
+
+interface Props {
+	product: ProductItem;
+}
+
+const { product } = Astro.props;
+
+// Filter produk terkait (kategori sama kecuali produk ini sendiri)
+const relatedProducts = productsData
+	.filter((p) => p.category === product.category && p.id !== product.id)
+	.slice(0, 3);
+
+// SEO Meta Data
+const pageTitle = `Beli ${product.title} - ${product.price} | RizzerShop`;
+const pageDescription = product.description 
+	? `${product.description} Beli ${product.title} murah mulai ${product.price}. Aktivasi cepat, bergaransi resmi, dan support 24/7 di RizzerShop.`
+	: `Beli ${product.title} murah mulai ${product.price}. Layanan digital ${product.category} terbaik dengan aktivasi cepat dan bergaransi di RizzerShop.`;
+
+const productKeywords = [
+	product.title,
+	`Beli ${product.title}`,
+	`${product.title} Murah`,
+	product.category,
+	'RizzerShop',
+	'Jual VPS Murah',
+	'Akun Premium Bergaransi',
+	...(product.specs || [])
+];
+
+// Product Schema.org Rich Snippet JSON-LD
+const numericPriceClean = product.price.replace(/[^\d]/g, '');
+const priceAmount = numericPriceClean || '25000';
+
+const productSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Product',
+	name: product.title,
+	description: pageDescription,
+	image: 'https://rizzercloud.web.id/image.png',
+	sku: product.id,
+	brand: {
+		'@type': 'Brand',
+		name: 'RizzerShop'
+	},
+	aggregateRating: {
+		'@type': 'AggregateRating',
+		ratingValue: '4.9',
+		reviewCount: '128',
+		bestRating: '5',
+		worstRating: '1'
+	},
+	offers: {
+		'@type': 'Offer',
+		url: `https://rizzercloud.web.id/produk/${product.id}`,
+		priceCurrency: 'IDR',
+		price: priceAmount,
+		priceValidUntil: '2026-12-31',
+		availability: product.available !== false ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+		itemCondition: 'https://schema.org/NewCondition',
+		seller: {
+			'@type': 'Organization',
+			name: 'RizzerShop'
+		}
+	}
+};
+
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: 'https://rizzercloud.web.id'
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Katalog Produk',
+			item: 'https://rizzercloud.web.id/produk'
+		},
+		{
+			'@type': 'ListItem',
+			position: 3,
+			name: product.title,
+			item: `https://rizzercloud.web.id/produk/${product.id}`
+		}
+	]
+};
+---
+
+<Layout
+	title={pageTitle}
+	description={pageDescription}
+	tags={productKeywords}
+>
+	<!-- Structured Data SEO Google Rich Snippet -->
+	<script is:inline type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+	<script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+	<Navbar />
+
+	<main class="min-h-screen bg-black px-4 py-12 sm:px-6">
+		<div class="mx-auto max-w-6xl">
+			<ProductDetailOrder product={product} relatedProducts={relatedProducts} />
+		</div>
+	</main>
+
+	<Footer />
+</Layout>

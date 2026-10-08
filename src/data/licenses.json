@@ -1,0 +1,45 @@
+[
+  {
+    "id": "lic-windows-11-pro",
+    "title": "Windows 11 Pro Retail Original",
+    "description": "Product key resmi 100% original Microsoft. Aktivasi online instan, bebas update selamanya, dan garansi seumur hidup.",
+    "category": "Tools & Lisensi",
+    "specs": [
+      "Lisensi 100% Retail Original Microsoft",
+      "Aktivasi Online Permanen (Lifetime)",
+      "Bisa untuk Windows 11 Pro 64-bit / 32-bit",
+      "Bebas Update Fitur & Security Resmi",
+      "Bisa Dipakai Install Ulang di PC yang Sama",
+      "Garansi Uang Kembali / Replace Key Baru"
+    ],
+    "price": "Rp 50.000",
+    "originalPrice": "Rp 350.000",
+    "discountPercent": "86%",
+    "period": "/lifetime",
+    "tag": "Best Seller",
+    "iconClass": "fa-brands fa-windows",
+    "available": true,
+    "hasWarranty": true
+  },
+  {
+    "id": "lic-office-365",
+    "title": "Microsoft Office 365 Pro Plus",
+    "description": "Paket aplikasi kantor terlengkap (Word, Excel, PowerPoint, Outlook, Access) + 1 TB Cloud OneDrive.",
+    "category": "Tools & Lisensi",
+    "specs": [
+      "Aplikasi Lengkap: Word, Excel, PPT, Outlook, Access",
+      "Bonus 1 TB Cloud Storage OneDrive Pribadi",
+      "Bisa Dipakai Hingga 5 Devices (PC, Mac, HP, Tablet)",
+      "Akses Update Fitur Terbaru Microsoft",
+      "Durasi 1 Tahun Penuh & Garansi Resmi"
+    ],
+    "price": "Rp 65.000",
+    "originalPrice": "Rp 499.000",
+    "discountPercent": "87%",
+    "period": "/tahun",
+    "tag": "Office 1TB",
+    "iconClass": "fa-solid fa-file-word",
+    "available": true,
+    "hasWarranty": true
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "id": "vps-premium-cloud",
+    "title": "Cloud VPS Premium Private",
+    "description": "Pay As You Go Cloud VPS — Unshared Resources, Bandwidth Unmetered, NVMe SSD, Uptime 99.9%.",
+    "category": "Premium VPS",
+    "specs": [
+      "Unshared Dedicated CPU Core",
+      "KVM Virtualization & High Performance",
+      "NVMe SSD Storage Cepat",
+      "Bandwidth Unmetered",
+      "Pilihan OS Linux Lengkap",
+      "Garansi Penuh 30 Hari & SLA 99.9%"
+    ],
+    "price": "Rp 70.000",
+    "period": "/bulan",
+    "tag": "Unshared 100%",
+    "iconClass": "fa-solid fa-bolt",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "vps-p-1g",
+        "name": "1 Core / 1 GB RAM / 20 GB SSD",
+        "price": "Rp 70.000",
+        "period": "/bulan",
+        "specs": ["1 Core CPU", "1 GB RAM", "20 GB SSD Storage", "Bandwidth Unmetered"]
+      },
+      {
+        "id": "vps-p-2g",
+        "name": "2 Cores / 2 GB RAM / 40 GB SSD",
+        "price": "Rp 130.000",
+        "period": "/bulan",
+        "specs": ["2 Cores CPU", "2 GB RAM", "40 GB SSD Storage", "Bandwidth Unmetered"]
+      },
+      {
+        "id": "vps-p-4g",
+        "name": "2 Cores / 4 GB RAM / 80 GB SSD",
+        "price": "Rp 210.000",
+        "period": "/bulan",
+        "specs": ["2 Cores CPU", "4 GB RAM", "80 GB SSD Storage", "Bandwidth Unmetered"]
+      },
+      {
+        "id": "vps-p-8g",
+        "name": "4 Cores / 8 GB RAM / 160 GB SSD",
+        "price": "Rp 335.000",
+        "period": "/bulan",
+        "specs": ["4 Cores CPU", "8 GB RAM", "160 GB SSD Storage", "Bandwidth Unmetered"]
+      },
+      {
+        "id": "vps-p-16g",
+        "name": "4 Cores / 16 GB RAM / 200 GB SSD",
+        "price": "Rp 475.000",
+        "period": "/bulan",
+        "specs": ["4 Cores CPU", "16 GB RAM", "200 GB SSD Storage", "Bandwidth Unmetered"]
+      },
+      {
+        "id": "vps-p-16g8c",
+        "name": "8 Cores / 16 GB RAM / 320 GB SSD",
+        "price": "Rp 595.000",
+        "period": "/bulan",
+        "specs": ["8 Cores CPU", "16 GB RAM", "320 GB SSD Storage", "Bandwidth Unmetered"]
+      },
+      {
+        "id": "vps-p-32g",
+        "name": "8 Cores / 32 GB RAM / 400 GB SSD",
+        "price": "Rp 880.000",
+        "period": "/bulan",
+        "specs": ["8 Cores CPU", "32 GB RAM", "400 GB SSD Storage", "Bandwidth Unmetered"]
+      }
+    ]
+  },
+  {
+    "id": "rdp-premium-cloud",
+    "title": "Windows RDP Premium Dedicated",
+    "description": "Desktop Windows Cloud performa tinggi dengan unshared CPU dan unmetered bandwidth.",
+    "category": "Premium VPS",
+    "specs": [
+      "Unshared Dedicated CPU Core",
+      "Windows Server 2022 / Windows 11 Pro",
+      "NVMe SSD Storage & High IOPS",
+      "Bandwidth Unmetered & IP Publik",
+      "Full Administrator Remote Desktop",
+      "Garansi Penuh 30 Hari"
+    ],
+    "price": "Rp 85.000",
+    "period": "/bulan",
+    "tag": "High Performance",
+    "iconClass": "fa-brands fa-windows",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "rdp-p-1g",
+        "name": "1 Core / 1 GB RAM / 20 GB SSD",
+        "price": "Rp 85.000",
+        "period": "/bulan",
+        "specs": ["1 Core CPU", "1 GB RAM", "20 GB SSD Storage", "Windows Server 2022"]
+      },
+      {
+        "id": "rdp-p-2g",
+        "name": "2 Cores / 2 GB RAM / 40 GB SSD",
+        "price": "Rp 150.000",
+        "period": "/bulan",
+        "specs": ["2 Cores CPU", "2 GB RAM", "40 GB SSD Storage", "Windows Server 2022"]
+      },
+      {
+        "id": "rdp-p-4g",
+        "name": "2 Cores / 4 GB RAM / 80 GB SSD",
+        "price": "Rp 230.000",
+        "period": "/bulan",
+        "specs": ["2 Cores CPU", "4 GB RAM", "80 GB SSD Storage", "Windows Server 2022 / Win 11"]
+      },
+      {
+        "id": "rdp-p-8g",
+        "name": "4 Cores / 8 GB RAM / 160 GB SSD",
+        "price": "Rp 355.000",
+        "period": "/bulan",
+        "specs": ["4 Cores CPU", "8 GB RAM", "160 GB SSD Storage", "Windows Server 2022 / Win 11"]
+      },
+      {
+        "id": "rdp-p-16g",
+        "name": "4 Cores / 16 GB RAM / 200 GB SSD",
+        "price": "Rp 500.000",
+        "period": "/bulan",
+        "specs": ["4 Cores CPU", "16 GB RAM", "200 GB SSD Storage", "Windows Server 2022"]
+      },
+      {
+        "id": "rdp-p-16g8c",
+        "name": "8 Cores / 16 GB RAM / 320 GB SSD",
+        "price": "Rp 625.000",
+        "period": "/bulan",
+        "specs": ["8 Cores CPU", "16 GB RAM", "320 GB SSD Storage", "Windows Server 2022"]
+      },
+      {
+        "id": "rdp-p-32g",
+        "name": "8 Cores / 32 GB RAM / 400 GB SSD",
+        "price": "Rp 910.000",
+        "period": "/bulan",
+        "specs": ["8 Cores CPU", "32 GB RAM", "400 GB SSD Storage", "Windows Server 2022"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ds-dual-xeon",
+    "title": "Bare Metal Dedicated Server",
+    "description": "Server fisik 100% milik Anda sendiri di Datacenter Tier 3 Jakarta. 128 GB RAM, 2x 1TB SSD, port 1 Gbps unmetered.",
+    "category": "Dedicated Server",
+    "specs": [
+      "Dual Intel Xeon E5 Hardware Dedicated",
+      "128 GB RAM ECC Server Grade",
+      "2 × 1 TB Enterprise SSD Storage",
+      "Port 1 Gbps Unmetered Bandwidth",
+      "Datacenter Tier 3 Jakarta (Cyber Building)",
+      "Garansi Hardware 24/7 & SLA 99.98%"
+    ],
+    "price": "Rp 3.300.000",
+    "period": "/bulan",
+    "tag": "Enterprise Metal",
+    "iconClass": "fa-solid fa-microchip",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "ds-2680-v4",
+        "name": "Dual Xeon E5 2680 V4 (28C/56T)",
+        "price": "Rp 3.300.000",
+        "period": "/bulan",
+        "specs": ["28 Cores / 56 Threads", "128 GB DDR4 ECC", "2×1 TB SSD", "Jakarta Tier 3"]
+      },
+      {
+        "id": "ds-2670-v2",
+        "name": "Dual Xeon E5 2670 V2 (20C/40T)",
+        "price": "Rp 3.300.000",
+        "period": "/bulan",
+        "specs": ["20 Cores / 40 Threads", "128 GB ECC", "2×1 TB SSD", "Jakarta Tier 3"]
+      },
+      {
+        "id": "ds-2690-v4",
+        "name": "Dual Xeon E5 2690 V4 (28C/56T High Clock)",
+        "price": "Rp 3.500.000",
+        "period": "/bulan",
+        "specs": ["28 Cores / 56 Threads", "128 GB DDR4 ECC", "2×1 TB SSD", "Jakarta Tier 3"]
+      },
+      {
+        "id": "ds-2680-v3",
+        "name": "Dual Xeon E5 2680 V3 (24C/48T)",
+        "price": "Rp 3.500.000",
+        "period": "/bulan",
+        "specs": ["24 Cores / 48 Threads", "128 GB DDR4 ECC", "2×1 TB SSD", "Jakarta Tier 3"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "acc-digitalocean",
+    "title": "Akun DigitalOcean Cloud",
+    "description": "Akun DigitalOcean aktif siap deploy VPS/Droplet dengan saldo credit aktif 2 bulan. Tersedia pilihan 3 Droplet dan 10 Droplet (Metode VCC & PayPal Verified). Sangat stabil untuk botting, tunneling SSH/VPN, dev project, dan proxy.",
+    "category": "Akun Cloud",
+    "specs": [
+      "Siap Create Droplet / VPS Cloud Langsung",
+      "Masa Aktif Credit / Saldo 2 Bulan",
+      "Pilihan Limit: 3 Droplet (Hemat) & 10 Droplet (Power)",
+      "Tersedia Metode High-Trust (PayPal Verified)",
+      "Akses Penuh Akun (Email & Password)",
+      "Garansi Login Pertama & Create 1 Droplet Pertama (1 Jam Klaim)",
+      "Wajib: Gunakan Browser Fresh/Incognito & IP Bersih Saat Pertama Login"
+    ],
+    "price": "Rp 115.000",
+    "originalPrice": "Rp 180.000",
+    "discountPercent": "47%",
+    "period": "/2 bulan",
+    "tag": "Best Seller Cloud",
+    "iconClass": "fa-brands fa-digital-ocean",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "do-3-droplet-vcc",
+        "name": "3 Droplet (Method VCC) - Entry Level",
+        "price": "Rp 95.000",
+        "originalPrice": "Rp 180.000",
+        "period": "/2 bulan",
+        "specs": [
+          "Limit 3 Droplet Aktif Bersamaan",
+          "Metode Verifikasi: VCC Valid",
+          "Masa Aktif Saldo 2 Bulan",
+          "Akses Penuh Akun & Email Terkait",
+          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+        ]
+      },
+      {
+        "id": "do-3-droplet-paypal",
+        "name": "3 Droplet (Method PayPal) - High Trust",
+        "price": "Rp 115.000",
+        "originalPrice": "Rp 210.000",
+        "period": "/2 bulan",
+        "specs": [
+          "Limit 3 Droplet Aktif Bersamaan",
+          "Metode Verifikasi: PayPal Verified (Lebih Tahan Suspend)",
+          "Masa Aktif Saldo 2 Bulan",
+          "Akses Penuh Akun & Email",
+          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+        ]
+      },
+      {
+        "id": "do-10-droplet-vcc",
+        "name": "10 Droplet (Method VCC) - Multi VPS",
+        "price": "Rp 125.000",
+        "originalPrice": "Rp 230.000",
+        "period": "/2 bulan",
+        "specs": [
+          "Limit Hingga 10 Droplet Aktif",
+          "Metode Verifikasi: VCC (Virtual Credit Card)",
+          "Masa Aktif Saldo 2 Bulan",
+          "Akses Penuh Akun & Email",
+          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+        ]
+      },
+      {
+        "id": "do-10-droplet-paypal",
+        "name": "10 Droplet (Method PayPal) - Ultra Resilient",
+        "price": "Rp 140.000",
+        "originalPrice": "Rp 260.000",
+        "period": "/2 bulan",
+        "specs": [
+          "Limit Hingga 10 Droplet Aktif",
+          "Metode Verifikasi: PayPal Verified (Paling Kuat & Stabil)",
+          "Masa Aktif Saldo 2 Bulan",
+          "Akses Penuh Akun & Email",
+          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "acc-aws-cloud",
+    "title": "Akun AWS Cloud (Amazon Web Services)",
+    "description": "Akun AWS siap pakai untuk deploy VPS EC2 (Linux / Windows Server), RDS Database, Lambda, dan S3 Storage. Cocok untuk developer, botting, VPN server, dan project cloud profesional.",
+    "category": "Akun Cloud",
+    "specs": [
+      "Siap Create EC2 Instance (Linux / Windows)",
+      "Pilihan Saldo Credit $100 s/d $300 & Free Tier 12 Bulan",
+      "Akses Penuh Root Akun AWS Console & Email",
+      "Support Berbagai Region Global (Singapore, US, Tokyo, dll)",
+      "Garansi Akun Login Pertama & First Instance Launch (1 Jam)",
+      "Aturan: Dilarang Mining/Abuse Port 25 Demi Keawetan Akun"
+    ],
+    "price": "Rp 119.000",
+    "originalPrice": "Rp 200.000",
+    "discountPercent": "50%",
+    "period": "/akun",
+    "tag": "AWS Cloud",
+    "iconClass": "fa-brands fa-aws",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "aws-freetier",
+        "name": "AWS Free Tier 12 Bulan (Limit 8-32 vCPU)",
+        "price": "Rp 99.000",
+        "originalPrice": "Rp 200.000",
+        "period": "/akun",
+        "specs": [
+          "Akun AWS Free Tier Aktif Siap Pakai",
+          "Siap Deploy EC2 Micro / Small Instance",
+          "Akses Penuh Email + Root Password",
+          "Garansi 1 Jam: Login & First Launch Valid"
+        ]
+      },
+      {
+        "id": "aws-credit-100",
+        "name": "AWS Credit $100 Promo Saldo",
+        "price": "Rp 165.000",
+        "originalPrice": "Rp 290.000",
+        "period": "/akun",
+        "specs": [
+          "Credit Saldo Promo $100 Terisi Otomatis",
+          "Bebas Deploy Instance Besar (Medium / Large)",
+          "Masa Aktif Credit Hingga 1 Tahun",
+          "Garansi 1 Jam: Saldo Masuk Utuh & Valid"
+        ]
+      },
+      {
+        "id": "aws-credit-300",
+        "name": "AWS Credit $300 High Balance",
+        "price": "Rp 299.000",
+        "originalPrice": "Rp 500.000",
+        "period": "/akun",
+        "specs": [
+          "Saldo Promo $300 Siap Pakai Multi-Instance",
+          "High Limit Deploy Skala Besar & Database",
+          "Cocok untuk Project Berat & Server Produksi",
+          "Garansi 1 Jam: Login & Saldo Valid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "acc-linode-akamai",
+    "title": "Akun Linode / Akamai Cloud ($100 Credit)",
+    "description": "Akun Linode Cloud (Akamai) dengan saldo promo credit $100 aktif selama 60 hari. Sangat stabil untuk deploy VPS, VPN tunneling, Kubernetes, dan botting 24 jam dengan performa network kencang.",
+    "category": "Akun Cloud",
+    "specs": [
+      "Credit Saldo $100 (Masa Aktif 60 Hari)",
+      "Deploy Nanode, Standard VPS, & High Memory Bebas",
+      "Network Cepat 40 Gbps Inbound & Low Latency",
+      "Akses Penuh Email & Akun Linode Cloud Manager",
+      "Garansi 1 Jam: Login Pertama & Saldo Utuh $100",
+      "Tips: Gunakan IP Lokal Bersih Saat Mengakses Manager"
+    ],
+    "price": "Rp 149.000",
+    "originalPrice": "Rp 240.000",
+    "discountPercent": "46%",
+    "period": "/akun",
+    "tag": "Linode $100",
+    "iconClass": "fa-brands fa-linode",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "linode-credit-100",
+        "name": "Linode Credit $100 (60 Hari)",
+        "price": "Rp 129.000",
+        "originalPrice": "Rp 240.000",
+        "period": "/akun",
+        "specs": [
+          "Saldo $100 Otomatis Aktif di Dashboard",
+          "Siap Deploy Linode VPS Kapan Saja",
+          "Full Akses Akun & Email Master",
+          "Garansi 1 Jam: Login Valid & Saldo Siap Pakai"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "acc-google-cloud-gcp",
+    "title": "Akun Google Cloud Platform (GCP $300 Credit)",
+    "description": "Akun GCP siap pakai dengan free trial credit $300 masa aktif 90 hari. Server tercepat dengan jaringan Google Premium Tier, Compute Engine, dan API lengkap termasuk Region Jakarta (asia-southeast2).",
+    "category": "Akun Cloud",
+    "specs": [
+      "Saldo Trial $300 Google Cloud (Aktif 90 Hari)",
+      "Akses Compute Engine, Cloud Run, Cloud SQL & BigQuery",
+      "Tersedia Region Jakarta (asia-southeast2) Super Cepat",
+      "Akses Penuh Gmail & Password Terkait",
+      "Garansi 1 Jam: Login & Saldo $300 Siap Deploy",
+      "Ketentuan: Jangan Melakukan Aktivitas Bruteforce / Crypto"
+    ],
+    "price": "Rp 199.000",
+    "originalPrice": "Rp 320.000",
+    "discountPercent": "45%",
+    "period": "/akun",
+    "tag": "GCP $300",
+    "iconClass": "fa-brands fa-google",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "gcp-trial-300",
+        "name": "GCP Trial $300 (90 Hari)",
+        "price": "Rp 175.000",
+        "originalPrice": "Rp 320.000",
+        "period": "/akun",
+        "specs": [
+          "Credit $300 Valid 90 Hari",
+          "Deploy VPS Compute Engine Bebas Region",
+          "Full Akses Email Gmail & Console",
+          "Garansi 1 Jam: Saldo Siap Pakai"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "acc-azure-cloud",
+    "title": "Akun Microsoft Azure Cloud ($200 Credit)",
+    "description": "Akun Microsoft Azure dengan credit balance $200 (aktif 30 hari) + free services 12 bulan. Solusi terbaik untuk deploy Windows Virtual Machine (RDP), Linux VM, dan SQL Database.",
+    "category": "Akun Cloud",
+    "specs": [
+      "Credit Saldo $200 (Aktif 30 Hari)",
+      "Free Services Populer Selama 12 Bulan",
+      "Paling Cocok untuk Windows RDP & Linux Virtual Machine",
+      "Akses Penuh Microsoft Account & Azure Portal",
+      "Garansi 1 Jam: Login Pertama & Credit $200 Terisi",
+      "Catatan: Gunakan Sesuai Quota vCPU Standar Azure"
+    ],
+    "price": "Rp 159.000",
+    "originalPrice": "Rp 250.000",
+    "discountPercent": "46%",
+    "period": "/akun",
+    "tag": "Azure $200",
+    "iconClass": "fa-brands fa-microsoft",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "azure-credit-200",
+        "name": "Azure Pay-As-You-Go + $200 Credit",
+        "price": "Rp 135.000",
+        "originalPrice": "Rp 250.000",
+        "period": "/akun",
+        "specs": [
+          "Credit $200 Langsung Aktif di Billing",
+          "Bisa Buat VM RDP / VPS Cepat",
+          "Akses Penuh Portal Azure & Outlook/Hotmail",
+          "Garansi 1 Jam: Login Pertama Valid"
+        ]
+      }
+    ]
+  }
+]

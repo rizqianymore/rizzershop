@@ -1,0 +1,48 @@
+---
+import { MessageSquare, ShieldCheck, Clock } from 'lucide-react';
+---
+
+<!-- Contact / Support Section -->
+<section id="contact" class="flex min-h-screen w-full flex-col justify-center bg-black px-4 py-12 sm:px-6">
+	<div class="mx-auto w-full max-w-4xl">
+		<div class="text-center max-w-2xl mx-auto mb-10">
+			<div class="text-xs font-medium text-blue-500 mb-1">Hubungi Dukungan</div>
+			<h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Butuh Bantuan?</h2>
+			<p class="mt-2 text-xs sm:text-sm text-zinc-400">Tim support kami siap bantu 24/7 via WhatsApp resmi.</p>
+		</div>
+
+		<div class="max-w-md mx-auto w-full">
+			<!-- WhatsApp Card -->
+			<a href="https://wa.me/6281385173654" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-8 bg-zinc-950 rounded-lg border border-zinc-800/80 hover:border-blue-500/50 transition-colors">
+				<div class="flex h-16 w-16 items-center justify-center rounded-full bg-green-500/20 text-green-400 group-hover:bg-green-500/30 group-hover:text-green-300 transition-colors mb-4">
+					<MessageSquare className="h-8 w-8" />
+				</div>
+				<h3 class="text-lg font-semibold text-white mb-1">WhatsApp Support</h3>
+				<p class="text-sm font-medium text-emerald-400 mb-1">+62 813-8517-3654</p>
+				<p class="text-xs text-zinc-400 mb-4">Respon cepat, langsung chat dengan CS teknis</p>
+				<span class="inline-flex items-center gap-1.5 rounded-sm bg-green-500/20 px-3 py-1 text-xs font-medium text-green-400 group-hover:bg-green-500/30 transition-colors">
+					<Clock className="h-3.5 w-3.5" />
+					<span>Online 24/7 Fast Response</span>
+				</span>
+			</a>
+		</div>
+
+		<div class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+			{[
+				{ icon: Clock, title: 'Jam Operasional', desc: 'Senin - Minggu: 08:00 - 23:00 WIB' },
+				{ icon: ShieldCheck, title: 'Garansi Layanan', desc: 'Replace VPS/RDP jika down selama sewa aktif' },
+				{ icon: MessageSquare, title: 'Response Time', desc: 'Rata-rata < 5 menit di jam kerja' },
+			].map((item, i) => (
+				<div data-astro-key={i} class="flex items-start gap-3 p-4 bg-black rounded-lg border border-zinc-800/80">
+					<div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-zinc-900 text-blue-400">
+						<item.icon className="h-4 w-4" />
+					</div>
+					<div>
+						<h4 class="text-sm font-medium text-white">{item.title}</h4>
+						<p class="text-xs text-zinc-400 mt-0.5">{item.desc}</p>
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

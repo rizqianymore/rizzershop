@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import ProductGrid from '../components/ProductGrid.astro';
+import Features from '../components/Features.astro';
+import Testimonials from '../components/Testimonials.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import FAQ from '../components/FAQ.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+	title="RizzerShop - Jual VPS Murah, RDP Botting & Akun Premium Bergaransi"
+	description="Pusat sewa Cloud VPS Linux, Windows RDP Botting, dan Akun Premium (ChatGPT Plus, Google Gemini Pro, Netflix, Spotify) murah, aktivasi instan 24/7 dan bergaransi resmi."
+	tags={['VPS Murah', 'RDP Botting', 'Akun Premium', 'ChatGPT Plus', 'Google Gemini Pro', 'RizzerShop', 'Cloud Server Indonesia']}
+>
+	<Navbar />
+	<main>
+		<Hero />
+		<ProductGrid />
+		<Features />
+		<Testimonials />
+		<HowItWorks />
+		<FAQ />
+		<Contact />
+	</main>
+	<Footer />
+</Layout>

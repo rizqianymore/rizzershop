@@ -1,0 +1,35 @@
+---
+import ProductCard from './ProductCard.astro';
+import { productsData } from '../data/products';
+
+// Ambil 4 produk unggulan untuk landing page (VPS Standard, VPS Premium, Akun AI, Streaming)
+const featuredProducts = [
+	productsData.find((p) => p.id === 'vps-starter') || productsData[0],
+	productsData.find((p) => p.id === 'vps-premium-cloud') || productsData[1],
+	productsData.find((p) => p.id === 'acc-gemini-pro') || productsData[2],
+	productsData.find((p) => p.id === 'acc-netflix') || productsData[3],
+];
+---
+
+<!-- 1 Window Fullscreen Products Section (Landing Page Featured) -->
+<section id="products" class="flex min-h-screen w-full flex-col justify-center bg-black px-4 py-12 sm:px-6">
+	<div class="mx-auto w-full max-w-6xl">
+		<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+			<div>
+				<!-- Mini Title (Normal-case, no uppercase) -->
+				<div class="text-xs font-medium text-blue-500 mb-1">Katalog Produk</div>
+				<h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Pilihan Unggulan</h2>
+				<p class="mt-1 text-xs sm:text-sm text-zinc-400">Pilihan server cloud dan akun digital terpopuler dengan jaminan garansi.</p>
+			</div>
+			<a href="/produk" class="inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+				Lihat Semua {productsData.length} Produk &rarr;
+			</a>
+		</div>
+
+		<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+			{featuredProducts.map((item) => (
+				<ProductCard {...item} />
+			))}
+		</div>
+	</div>
+</section>

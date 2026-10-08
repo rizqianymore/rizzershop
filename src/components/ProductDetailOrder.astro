@@ -1,0 +1,402 @@
+---
+import type { ProductItem } from '../data/products';
+
+interface Props {
+  product: ProductItem;
+  relatedProducts?: ProductItem[];
+}
+
+const { product, relatedProducts = [] } = Astro.props;
+
+// Inisialisasi harga & varian awal
+const initialVariant = product.variants && product.variants.length > 0 ? product.variants[0] : null;
+const initialPrice = initialVariant ? initialVariant.price : product.price;
+const initialPeriod = initialVariant ? initialVariant.period : (product.period || '');
+const initialSpecs = (initialVariant && initialVariant.specs && initialVariant.specs.length > 0)
+  ? initialVariant.specs
+  : (product.specs || []);
+---
+
+<div class="w-full max-w-4xl mx-auto space-y-6" id="product-detail-root" data-product={JSON.stringify(product)}>
+  <!-- Breadcrumbs -->
+  <nav class="flex items-center gap-2 text-xs text-zinc-500">
+    <a href="/" class="hover:text-zinc-300 transition-colors">Home</a>
+    <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+    <a href="/produk" class="hover:text-zinc-300 transition-colors">Katalog</a>
+    <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+    <span class="text-zinc-300 font-medium">{product.title}</span>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-start">
+    
+    <!-- Kolom Kiri: Info & Spesifikasi Produk -->
+    <div class="md:col-span-7 flex flex-col justify-between rounded-lg bg-zinc-950 p-6">
+      <div>
+        <!-- Header Badge -->
+        <div class="flex items-center justify-between mb-4">
+          <span class="inline-flex items-center rounded border border-blue-500/30 bg-blue-950/40 px-2 py-0.5 text-[10px] font-normal text-blue-400">
+            {product.category}
+          </span>
+          {product.tag && (
+            <span class="inline-flex items-center rounded bg-blue-600 px-2 py-0.5 text-[10px] font-medium text-white">
+              {product.tag}
+            </span>
+          )}
+        </div>
+
+        <!-- Title & Icon -->
+        <div class="flex items-center gap-3 mb-4">
+          <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-black text-blue-400">
+            <i class={`${product.iconClass || 'fa-solid fa-server'} text-xl`}></i>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-white">
+              {product.title}
+            </h1>
+            <div class="text-xs text-zinc-400 mt-0.5">
+              Aktivasi Instan &bull; Jaminan Layanan
+            </div>
+          </div>
+        </div>
+
+        <!-- Description -->
+        {product.description && (
+          <p class="text-xs text-zinc-400 leading-relaxed mb-6">
+            {product.description}
+          </p>
+        )}
+
+        <!-- List Spesifikasi / Fitur -->
+        <div class="border-t border-zinc-900/80 pt-5">
+          <h2 class="text-xs font-semibold text-zinc-200 mb-3" id="specs-title">
+            Spesifikasi & Detail {initialVariant ? `(${initialVariant.name})` : ''}:
+          </h2>
+          <ul class="space-y-2" id="specs-list">
+            {initialSpecs.map((spec) => (
+              <li class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg class="h-3.5 w-3.5 text-blue-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{spec}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kolom Kanan: Beli Langsung / Ringkasan Harga -->
+    <div class="md:col-span-5 rounded-lg bg-zinc-950 p-6 flex flex-col justify-between">
+      <div>
+        <div class="text-xs font-medium text-blue-500 mb-1">Pemesanan</div>
+        <h3 class="text-sm font-semibold text-white mb-4">Ringkasan Order</h3>
+
+        <!-- Price Box -->
+        <div class="rounded bg-black p-4 mb-4 border border-zinc-900">
+          <div class="flex items-center justify-between">
+            <div class="text-[11px] text-zinc-500">Harga Layanan</div>
+            {product.discountPercent && (
+              <span class="text-[10px] font-bold text-rose-400 bg-rose-950/80 border border-rose-500/40 px-2 py-0.5 rounded">
+                Hemat {product.discountPercent}
+              </span>
+            )}
+          </div>
+          {product.originalPrice && (
+            <div class="text-xs text-zinc-500 line-through mt-1 font-medium">
+              {product.originalPrice}
+            </div>
+          )}
+          <div class="flex items-baseline gap-1 mt-0.5">
+            <span class="text-xl font-bold text-white" id="display-unit-price">{initialPrice}</span>
+            <span class="text-xs text-zinc-500" id="display-unit-period">{initialPeriod}</span>
+          </div>
+
+          <div class="mt-3 pt-3 border-t border-zinc-900 flex justify-between text-xs hidden" id="total-price-box">
+            <span class="text-zinc-400" id="display-qty-label">Total (1x):</span>
+            <span class="font-semibold text-blue-400" id="display-total-price">{initialPrice}</span>
+          </div>
+        </div>
+
+        <!-- Opsi Pilihan Varian Spesifikasi / Durasi (Jika ada) -->
+        {product.variants && product.variants.length > 0 && (
+          <div class="mb-4">
+            <label class="block text-xs text-zinc-400 mb-1.5 font-medium">
+              Pilih Varian / Spesifikasi
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-2 gap-2" id="variant-buttons-group">
+              {product.variants.map((v, idx) => {
+                const isFirst = idx === 0;
+                return (
+                  <button
+                    type="button"
+                    data-variant-id={v.id}
+                    data-variant-name={v.name}
+                    data-variant-price={v.price}
+                    data-variant-period={v.period}
+                    data-variant-specs={JSON.stringify(v.specs || [])}
+                    class={`variant-btn rounded px-2.5 py-2 text-center transition border cursor-pointer ${
+                      isFirst
+                        ? 'border-blue-500 bg-blue-950/40 text-white shadow-sm'
+                        : 'border-zinc-800 bg-zinc-900/60 text-zinc-400 hover:text-white hover:border-zinc-700'
+                    }`}
+                  >
+                    <div class="text-xs font-semibold">{v.name}</div>
+                    <div class="text-[10px] text-zinc-400 mt-0.5">{v.price}</div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        <!-- Kontrol Kuantitas -->
+        <div class="mb-4">
+          <label for="input-qty" class="block text-xs text-zinc-400 mb-1.5 font-medium">Jumlah Pesanan</label>
+          <input
+            id="input-qty"
+            type="number"
+            min="1"
+            max="999"
+            value="1"
+            class="w-28 rounded bg-zinc-900 border border-zinc-800 px-3 py-1.5 text-xs text-white font-bold focus:outline-none focus:border-blue-500 transition"
+          />
+        </div>
+
+        <!-- Catatan Pemesan -->
+        <div class="mb-4">
+          <label for="order-notes" class="block text-xs text-zinc-400 mb-1.5 font-medium">Catatan (Opsional)</label>
+          <input
+            id="order-notes"
+            type="text"
+            placeholder="Contoh: Request OS / email akun"
+            class="w-full rounded bg-zinc-900 border border-zinc-800 px-3 py-2 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-blue-500 transition"
+          />
+        </div>
+      </div>
+
+      <!-- Action Order Button -->
+      <div class="border-t border-zinc-900/80 pt-4 mt-2">
+        <button
+          type="button"
+          id="btn-buy-whatsapp"
+          class="w-full inline-flex items-center justify-center gap-1.5 rounded-sm bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-blue-500 active:scale-95 shadow cursor-pointer"
+        >
+          <span>Beli via WhatsApp</span>
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+        <p class="mt-2 text-center text-[10px] text-zinc-500">
+          Aktivasi cepat &bull; {product.hasWarranty === false ? 'Non-garansi' : 'Garansi replace'} &bull; Bayar via QRIS/Bank
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Produk Lainnya -->
+  {relatedProducts.length > 0 && (
+    <div class="border-t border-zinc-900 pt-8 mt-10">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-xs font-semibold text-zinc-300">Produk Terkait Lainnya</h3>
+        <a href="/produk" class="text-xs text-blue-400 hover:text-blue-300">
+          Lihat Semua &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {relatedProducts.slice(0, 3).map((item) => (
+          <div class="group flex flex-col justify-between rounded-lg bg-zinc-950 p-5 transition hover:bg-zinc-900/60 min-h-[160px] h-full">
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-4">
+                <span class="inline-flex items-center rounded border border-blue-500/30 bg-blue-950/40 px-2 py-0.5 text-[10px] font-normal text-blue-400">
+                  {item.category}
+                </span>
+                {item.tag && (
+                  <span class="inline-flex items-center rounded bg-blue-600 px-2 py-0.5 text-[10px] font-medium text-white">
+                    {item.tag}
+                  </span>
+                )}
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-black text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i class={`${item.iconClass || 'fa-solid fa-server'} text-lg`}></i>
+                </div>
+                <h4 class="text-sm font-semibold text-white group-hover:text-blue-200 transition-colors">
+                  {item.title}
+                </h4>
+              </div>
+
+              {item.description && (
+                <p class="mt-3 text-[11px] text-zinc-400 leading-relaxed line-clamp-2 group-hover:text-zinc-300">
+                  {item.description}
+                </p>
+              )}
+            </div>
+
+            <div class="mt-6 flex items-baseline justify-between border-t border-zinc-900/80 pt-4">
+              <div>
+                <span class="text-base font-bold text-white">{item.price}</span>
+                {item.period && (
+                  <span class="text-[11px] text-zinc-500 font-normal ml-1">{item.period}</span>
+                )}
+              </div>
+
+              <a
+                href={`/produk/${item.id}`}
+                class="inline-flex items-center gap-1.5 rounded-sm bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white transition hover:bg-blue-500 active:scale-95 shadow"
+              >
+                <span>Beli</span>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+</div>
+
+<script is:inline>
+function initProductOrder() {
+  const root = document.getElementById('product-detail-root');
+  if (!root) return;
+
+  const productData = JSON.parse(root.getAttribute('data-product') || '{}');
+  const variants = productData.variants || [];
+  
+  let currentVariant = variants.length > 0 ? variants[0] : null;
+  let currentQty = 1;
+
+  const inputQty = document.getElementById('input-qty');
+  const displayUnitPrice = document.getElementById('display-unit-price');
+  const displayUnitPeriod = document.getElementById('display-unit-period');
+  const totalPriceBox = document.getElementById('total-price-box');
+  const displayQtyLabel = document.getElementById('display-qty-label');
+  const displayTotalPrice = document.getElementById('display-total-price');
+  const specsTitle = document.getElementById('specs-title');
+  const specsList = document.getElementById('specs-list');
+  const orderNotes = document.getElementById('order-notes');
+  const btnBuyWhatsapp = document.getElementById('btn-buy-whatsapp');
+  const variantBtns = document.querySelectorAll('.variant-btn');
+
+  function getNumericPrice(priceStr) {
+    if (!priceStr) return 0;
+    const num = priceStr.replace(/[^\d]/g, '');
+    return num ? parseInt(num, 10) : 0;
+  }
+
+  function updatePricing() {
+    const activePriceStr = currentVariant ? currentVariant.price : productData.price;
+    const activePeriodStr = currentVariant ? currentVariant.period : (productData.period || '');
+    const numPrice = getNumericPrice(activePriceStr);
+
+    if (displayUnitPrice) displayUnitPrice.textContent = activePriceStr;
+    if (displayUnitPeriod) displayUnitPeriod.textContent = activePeriodStr;
+    if (inputQty && inputQty.value !== currentQty.toString()) {
+      inputQty.value = currentQty.toString();
+    }
+
+    if (currentQty > 1 && numPrice > 0) {
+      if (totalPriceBox) totalPriceBox.classList.remove('hidden');
+      if (displayQtyLabel) displayQtyLabel.textContent = `Total (${currentQty}x):`;
+      if (displayTotalPrice) {
+        displayTotalPrice.textContent = 'Rp ' + (numPrice * currentQty).toLocaleString('id-ID');
+      }
+    } else {
+      if (totalPriceBox) totalPriceBox.classList.add('hidden');
+    }
+  }
+
+  // Variant Buttons
+  variantBtns.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const variantId = btn.getAttribute('data-variant-id');
+      const found = variants.find(function(v) { return v.id === variantId; });
+      if (found) {
+        currentVariant = found;
+
+        // Update active class
+        variantBtns.forEach(function(b) {
+          b.className = 'variant-btn rounded px-2.5 py-2 text-center transition border cursor-pointer border-zinc-800 bg-zinc-900/60 text-zinc-400 hover:text-white hover:border-zinc-700';
+        });
+        btn.className = 'variant-btn rounded px-2.5 py-2 text-center transition border cursor-pointer border-blue-500 bg-blue-950/40 text-white shadow-sm';
+
+        // Update specs
+        if (specsTitle) {
+          specsTitle.textContent = 'Spesifikasi & Detail (' + currentVariant.name + '):';
+        }
+        if (specsList && currentVariant.specs && currentVariant.specs.length > 0) {
+          specsList.innerHTML = currentVariant.specs.map(function(s) {
+            return '<li class="flex items-center gap-2 text-xs text-zinc-300">' +
+              '<svg class="h-3.5 w-3.5 text-blue-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>' +
+              '<span>' + s + '</span>' +
+              '</li>';
+          }).join('');
+        }
+
+        updatePricing();
+      }
+    });
+  });
+
+  // Quantity Input Number
+  if (inputQty) {
+    const handleQtyChange = function() {
+      let val = parseInt(inputQty.value, 10);
+      if (isNaN(val) || val < 1) {
+        val = 1;
+      }
+      currentQty = val;
+      updatePricing();
+    };
+
+    inputQty.addEventListener('input', handleQtyChange);
+    inputQty.addEventListener('change', function() {
+      let val = parseInt(inputQty.value, 10);
+      if (isNaN(val) || val < 1) {
+        val = 1;
+      }
+      inputQty.value = val.toString();
+      currentQty = val;
+      updatePricing();
+    });
+  }
+
+  // WhatsApp Buy Button
+  if (btnBuyWhatsapp) {
+    btnBuyWhatsapp.addEventListener('click', function(e) {
+      e.preventDefault();
+      const activePriceStr = currentVariant ? currentVariant.price : productData.price;
+      const numPrice = getNumericPrice(activePriceStr);
+      const finalPrice = numPrice > 0 ? 'Rp ' + (numPrice * currentQty).toLocaleString('id-ID') : activePriceStr;
+      
+      const itemTitle = currentVariant ? (productData.title + ' - ' + currentVariant.name) : productData.title;
+      const notesValue = orderNotes ? orderNotes.value.trim() : '';
+
+      const detailsLines = [
+        currentVariant ? ('Paket / Durasi: ' + currentVariant.name + ' (' + currentVariant.period + ')') : (productData.period ? ('Durasi: ' + productData.period) : null),
+        currentQty > 1 ? ('Jumlah: ' + currentQty + ' item') : null,
+        notesValue ? ('Catatan: ' + notesValue) : null
+      ].filter(Boolean).join('\n');
+
+      const msg = 'Halo Admin, saya mau order:\n\n' +
+        '*Produk:* ' + itemTitle + '\n' +
+        '*Total:* ' + finalPrice + '\n\n' +
+        '*Detail:*\n' + (detailsLines || '-') + '\n\n' +
+        'Mohon instruksi pembayarannya. Terima kasih.';
+
+      const waUrl = 'https://wa.me/6281385173654?text=' + encodeURIComponent(msg);
+      window.open(waUrl, '_blank');
+    });
+  }
+
+  // Initial pricing
+  updatePricing();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initProductOrder);
+} else {
+  initProductOrder();
+}
+document.addEventListener('astro:page-load', initProductOrder);
+</script>

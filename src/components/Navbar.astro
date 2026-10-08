@@ -1,0 +1,94 @@
+---
+import { Search, User } from "lucide-react";
+import Logo from './ui/Logo.astro';
+---
+
+<header class="sticky top-0 z-50 w-full bg-black/90 backdrop-blur-md">
+	<div
+		class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-8"
+	>
+		<!-- Brand Logo -->
+		<a href="/" class="flex items-center gap-2 text-lg font-bold tracking-tight text-white hover:text-blue-400 transition-colors">
+			<Logo size="md" />
+			<span>Rizzer<span class="text-blue-500">shop</span></span>
+		</a>
+
+		<!-- Navigation Links -->
+		<nav
+			class="hidden md:flex items-center gap-1.5 text-xs font-medium text-zinc-400"
+		>
+			<a
+				href="/"
+				class="rounded-sm px-2.5 py-1.5 transition-all duration-300 ease-out hover:text-white hover:bg-zinc-800/60 active:scale-95"
+			>
+				Home
+			</a>
+			<a
+				href="/produk"
+				class="rounded-sm px-2.5 py-1.5 transition-all duration-300 ease-out hover:text-white hover:bg-zinc-800/60 active:scale-95"
+			>
+				Katalog Produk
+			</a>
+			<a
+				href="/#categories"
+				class="rounded-sm px-2.5 py-1.5 transition-all duration-300 ease-out hover:text-white hover:bg-zinc-800/60 active:scale-95"
+			>
+				Keunggulan
+			</a>
+			<a
+				href="/#faq"
+				class="rounded-sm px-2.5 py-1.5 transition-all duration-300 ease-out hover:text-white hover:bg-zinc-800/60 active:scale-95"
+			>
+				FAQ
+			</a>
+		</nav>
+
+		<!-- Search Bar Desktop (Active Form) -->
+		<form action="/produk" method="GET" class="hidden sm:flex flex-1 max-w-xs mx-6">
+			<div class="relative w-full">
+				<Search
+					className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-500 pointer-events-none"
+				/>
+				<input
+					type="text"
+					name="q"
+					placeholder="Cari VPS, Proxy, atau Akun..."
+					class="w-full rounded-sm bg-zinc-900/80 py-1.5 pl-9 pr-4 text-xs text-zinc-200 placeholder-zinc-500 transition focus:outline-none focus:ring-1 focus:ring-blue-500 border border-zinc-800/80"
+				/>
+			</div>
+		</form>
+
+		<!-- Nav Actions -->
+		<div class="flex items-center gap-3">
+			<a
+				href="/produk"
+				class="hidden sm:inline-flex items-center gap-1.5 rounded-sm bg-blue-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-blue-500 active:scale-95"
+			>
+				<span>Semua Produk</span>
+			</a>
+
+			<button
+				type="button"
+				class="flex h-8 w-8 items-center justify-center rounded-sm bg-zinc-900 text-zinc-300 hover:bg-zinc-850 hover:text-blue-400 transition"
+				aria-label="Akun Saya"
+			>
+				<User className="h-4 w-4" />
+			</button>
+		</div>
+	</div>
+
+	<!-- Mobile Search Bar (Always visible on mobile devices) -->
+	<div class="block sm:hidden px-4 pb-3 border-b border-zinc-900/80">
+		<form action="/produk" method="GET" class="relative w-full">
+			<Search
+				className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-500 pointer-events-none"
+			/>
+			<input
+				type="text"
+				name="q"
+				placeholder="Cari produk, server, atau akun..."
+				class="w-full rounded-sm bg-zinc-900/90 py-1.5 pl-9 pr-4 text-xs text-zinc-200 placeholder-zinc-500 transition focus:outline-none focus:ring-1 focus:ring-blue-500 border border-zinc-800"
+			/>
+		</form>
+	</div>
+</header>

@@ -1,0 +1,283 @@
+[
+  {
+    "id": "acc-github-student-pack",
+    "title": "GitHub Student Developer Pack",
+    "description": "Paket lisensi developer terlengkap untuk programmer dan pelajar. Mendapatkan puluhan benefit gratis: DigitalOcean credit $200, domain gratis Namecheap / .tech, Canva Pro, JetBrains, Termius, dan masih banyak lagi.",
+    "category": "Akun Premium",
+    "specs": [
+      "DigitalOcean Credit $200 (Via GitHub Pack)",
+      "Domain Gratis 1 Tahun (Namecheap .me & .tech)",
+      "Canva Pro 1 Tahun Gratis",
+      "JetBrains All Products Pack Gratis",
+      "Termius SSH Pro Gratis",
+      "Namecheap Free SSL Certificate",
+      "Garansi Status GitHub Student Aktif & Approved"
+    ],
+    "price": "Rp 85.000",
+    "originalPrice": "Rp 250.000",
+    "discountPercent": "66%",
+    "period": "/akun",
+    "tag": "Best Dev Value",
+    "iconClass": "fa-brands fa-github",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "gh-student-standard",
+        "name": "Akun GitHub Student Siap Pakai",
+        "price": "Rp 85.000",
+        "originalPrice": "Rp 250.000",
+        "period": "/akun",
+        "specs": [
+          "Akun GitHub Fresh Sudah Approved Student",
+          "Tinggal Claim Semua Benefit Developer Pack",
+          "Termasuk Akses Email Edu Terkait",
+          "Garansi Approved & Siap Claim"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "svc-vcc-jasa-bayar",
+    "title": "VCC & Jasa Bayar Online Global",
+    "description": "Virtual Credit Card (VCC) & Jasa Pembayaran Online untuk transaksi luar negeri, langganan cloud/SaaS, trial developer, aktivasi akun, dan billing internasional.",
+    "category": "Jasa & Setup",
+    "specs": [
+      "VCC Visa / Mastercard Valid Internasional",
+      "Jasa Pembayaran Merchant Luar Negeri & SaaS",
+      "Proses Cepat, Aman & Terpercaya",
+      "Rate Transparan & Pembayaran via QRIS/Bank Lokal",
+      "Bantuan Transaksi Sampai Sukses"
+    ],
+    "price": "Rp 25.000",
+    "originalPrice": "Rp 50.000",
+    "discountPercent": "50%",
+    "period": "/transaksi",
+    "tag": "Jasa Pembayaran",
+    "iconClass": "fa-solid fa-credit-card",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "vcc-verifikasi",
+        "name": "VCC Verifikasi / Trial Akun",
+        "price": "Rp 25.000",
+        "originalPrice": "Rp 50.000",
+        "period": "/kartu",
+        "specs": [
+          "1 Kartu VCC dengan Saldo Verifikasi ($1 - $2)",
+          "Support Billing Address & Kode OTP / Verifikasi",
+          "Cocok untuk Trial Layanan Cloud / SaaS",
+          "Garansi Kartu Valid Saat Digunakan"
+        ]
+      },
+      {
+        "id": "vcc-jasa-bayar-billing",
+        "name": "Jasa Bayar Billing / Checkout Luar Negeri",
+        "price": "Rp 35.000",
+        "originalPrice": "Rp 60.000",
+        "period": "/transaksi",
+        "specs": [
+          "Jasa Pembayaran Invoice / Tagihan SaaS & Hosting",
+          "Fee Layanan Murah + Rate Kurs Transparan",
+          "Bukti Transaksi & Invoice Resmi",
+          "Bimbingan & Transaksi Diproses Langsung"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "acc-gemini-pro",
+    "title": "Google Gemini Pro",
+    "description": "AI tercanggih dari Google dengan context window sangat besar untuk analisis data mendalam.",
+    "category": "Akun Premium",
+    "specs": [
+      "Gemini 1.5 Pro Long Context",
+      "Integrasi Google Workspace & Drive",
+      "Durasi 18 Bulan",
+      "Garansi Penuh 18 Bulan"
+    ],
+    "price": "Rp 30.000",
+    "originalPrice": "Rp 150.000",
+    "discountPercent": "80%",
+    "period": "/18 bulan",
+    "tag": "Best AI Deal",
+    "iconClass": "fa-solid fa-wand-magic-sparkles",
+    "available": true,
+    "hasWarranty": true
+  },
+  {
+    "id": "acc-gemini-plus",
+    "title": "Google Gemini Plus",
+    "description": "Upgrade pengalaman produktivitas Anda dengan integrasi AI langsung di Docs dan Gmail.",
+    "category": "Akun Premium",
+    "specs": [
+      "Akses Model Advanced Fitur Cepat",
+      "Integrasi AI Docs & Gmail",
+      "Durasi 6 Bulan",
+      "Garansi Penuh 6 Bulan"
+    ],
+    "price": "Rp 28.000",
+    "originalPrice": "Rp 99.000",
+    "discountPercent": "72%",
+    "period": "/6 bulan",
+    "tag": "Popular",
+    "iconClass": "fa-solid fa-brain",
+    "available": true,
+    "hasWarranty": true
+  },
+  {
+    "id": "acc-spotify",
+    "title": "Spotify Premium",
+    "description": "Dengarkan musik favorit tanpa gangguan iklan dan kualitas audio terbaik.",
+    "category": "Akun Premium",
+    "specs": [
+      "Bebas Iklan & Download Offline",
+      "Audio Quality 320kbps",
+      "Pilihan Durasi 1, 2, atau 3 Bulan",
+      "Garansi Penuh Selama Masa Aktif"
+    ],
+    "price": "Rp 25.000",
+    "originalPrice": "Rp 55.000",
+    "discountPercent": "55%",
+    "period": "/bulan",
+    "tag": "Music",
+    "iconClass": "fa-brands fa-spotify",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "spotify-1m",
+        "name": "1 Bulan",
+        "price": "Rp 25.000",
+        "period": "/1 bulan",
+        "specs": ["Garansi 1 Bulan", "Bebas Iklan", "Download Offline", "Kualitas 320kbps"]
+      },
+      {
+        "id": "spotify-2m",
+        "name": "2 Bulan",
+        "price": "Rp 50.000",
+        "period": "/2 bulan",
+        "specs": ["Garansi Penuh 2 Bulan", "Bebas Iklan", "Download Offline", "Kualitas 320kbps"]
+      },
+      {
+        "id": "spotify-3m",
+        "name": "3 Bulan",
+        "price": "Rp 75.000",
+        "period": "/3 bulan",
+        "specs": ["Garansi Penuh 3 Bulan", "Bebas Iklan", "Download Offline", "Kualitas 320kbps"]
+      }
+    ]
+  },
+  {
+    "id": "acc-chatgpt-business",
+    "title": "ChatGPT Business Workspace",
+    "description": "Solusi AI untuk tim dengan privasi data maksimal dan akses model GPT terbaru tanpa batas.",
+    "category": "Akun Premium",
+    "specs": [
+      "Workspace Team / Business Domain",
+      "Model GPT-4o, o1, Canvas Unlimited",
+      "Privasi Data Pelatihan Tidak Disimpan",
+      "Durasi 1 Bulan"
+    ],
+    "price": "Rp 80.000",
+    "originalPrice": "Rp 320.000",
+    "discountPercent": "75%",
+    "period": "/1 bulan",
+    "tag": "Business AI",
+    "iconClass": "fa-solid fa-briefcase",
+    "available": true,
+    "hasWarranty": false
+  },
+  {
+    "id": "acc-netflix",
+    "title": "Netflix Premium (Non-TV)",
+    "description": "Streaming film dan series favorit kualitas 4K di semua perangkat portabel Anda.",
+    "category": "Akun Premium",
+    "specs": [
+      "1 Profile Pribadi (1 User)",
+      "Khusus HP, Tablet, Laptop & PC (Tidak Bisa TV)",
+      "Kualitas Full HD / Ultra HD",
+      "Durasi 1 Bulan & Garansi Penuh"
+    ],
+    "price": "Rp 28.000",
+    "originalPrice": "Rp 65.000",
+    "discountPercent": "57%",
+    "period": "/1 bulan",
+    "tag": "1P Non-TV",
+    "iconClass": "fa-solid fa-film",
+    "available": true,
+    "hasWarranty": true
+  },
+  {
+    "id": "acc-capcut",
+    "title": "CapCut Pro",
+    "description": "Akses semua fitur editing premium, efek, dan cloud storage untuk konten kreator profesional.",
+    "category": "Akun Premium",
+    "specs": [
+      "Semua Efek & Filter Pro Unlocked",
+      "Cloud Storage & Tanpa Watermark",
+      "Durasi 1 Bulan",
+      "Garansi Penuh 1 Bulan"
+    ],
+    "price": "Rp 28.000",
+    "originalPrice": "Rp 79.000",
+    "discountPercent": "65%",
+    "period": "/1 bulan",
+    "tag": "Creator Choice",
+    "iconClass": "fa-solid fa-video",
+    "available": true,
+    "hasWarranty": true
+  },
+  {
+    "id": "acc-youtube-premium",
+    "title": "YouTube Premium (Private)",
+    "description": "Nonton YouTube bebas iklan tanpa gangguan, putar di latar belakang, dan akses YouTube Music Premium.",
+    "category": "Akun Premium",
+    "specs": [
+      "Akun Private (Email Pembeli / Email Baru)",
+      "Bebas Iklan Video & Sponsor Pop-up",
+      "Putar di Latar Belakang (Background Play & PiP)",
+      "Termasuk YouTube Music Premium Bebas Iklan",
+      "Download Video Offline Kualitas HD",
+      "Bisa Digunakan di Semua Device (HP, Tablet, TV, PC)",
+      "Garansi Penuh Selama Masa Aktif"
+    ],
+    "price": "Rp 30.000",
+    "originalPrice": "Rp 59.000",
+    "discountPercent": "49%",
+    "period": "/1 bulan",
+    "tag": "Private Akun",
+    "iconClass": "fa-brands fa-youtube",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "yt-1m",
+        "name": "1 Bulan (Private)",
+        "price": "Rp 30.000",
+        "period": "/1 bulan",
+        "specs": [
+          "Durasi 1 Bulan Penuh",
+          "Akun Private Pribadi",
+          "Bebas Iklan & Background Play",
+          "Include YouTube Music Premium",
+          "Garansi 30 Hari Penuh"
+        ]
+      },
+      {
+        "id": "yt-3m",
+        "name": "3 Bulan (Private)",
+        "price": "Rp 85.000",
+        "period": "/3 bulan",
+        "specs": [
+          "Durasi 3 Bulan Penuh",
+          "Akun Private Pribadi",
+          "Bebas Iklan & Background Play",
+          "Include YouTube Music Premium",
+          "Garansi 3 Bulan Penuh"
+        ]
+      }
+    ]
+  }
+]

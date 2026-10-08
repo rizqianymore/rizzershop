@@ -1,0 +1,233 @@
+[
+  {
+    "id": "cpanel-hosting",
+    "title": "cPanel Cloud Web Hosting",
+    "description": "Web hosting dengan control panel cPanel nomor 1 di dunia. Dilengkapi Softaculous 1-click installer, LiteSpeed Web Server, dan garansi uang kembali 30 hari.",
+    "category": "Web Hosting",
+    "specs": [
+      "Control Panel cPanel Resmi Terpopuler",
+      "SSD NVMe Storage Cepat & Stabil",
+      "Bandwidth Unlimited Tanpa Kuota",
+      "LiteSpeed Web Server & LSCache",
+      "Free SSL Let's Encrypt Selamanya",
+      "Garansi Uang Kembali 30 Hari Penuh"
+    ],
+    "price": "Rp 85.000",
+    "period": "/bulan",
+    "tag": "cPanel Panel",
+    "iconClass": "fa-brands fa-cpanel",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "cp-starter",
+        "name": "Starter cPanel",
+        "price": "Rp 85.000",
+        "period": "/bulan",
+        "specs": [
+          "5 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "10 Addon Domains",
+          "10 FTP Accounts",
+          "10 Email Accounts",
+          "cPanel Control Panel"
+        ]
+      },
+      {
+        "id": "cp-premium",
+        "name": "Premium cPanel",
+        "price": "Rp 185.000",
+        "period": "/bulan",
+        "specs": [
+          "20 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "Unlimited Addon Domains",
+          "Unlimited FTP Accounts",
+          "Unlimited Email Accounts",
+          "cPanel Control Panel"
+        ]
+      },
+      {
+        "id": "cp-premium-plus",
+        "name": "Premium+ cPanel",
+        "price": "Rp 355.000",
+        "period": "/bulan",
+        "specs": [
+          "70 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "Unlimited Addon Domains",
+          "Unlimited FTP Accounts",
+          "Unlimited Email Accounts",
+          "cPanel Control Panel"
+        ]
+      },
+      {
+        "id": "cp-executive",
+        "name": "Executive cPanel",
+        "price": "Rp 515.000",
+        "period": "/bulan",
+        "specs": [
+          "120 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "Unlimited Addon Domains",
+          "Unlimited FTP Accounts",
+          "Unlimited Email Accounts",
+          "cPanel Control Panel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "directadmin-hosting",
+    "title": "DirectAdmin Cloud Hosting",
+    "description": "Hosting ringan, super cepat dan ramah di kantong dengan DirectAdmin. Performa optimal untuk blog, landing page, dan toko online.",
+    "category": "Web Hosting",
+    "specs": [
+      "Control Panel DirectAdmin Modern & Ringan",
+      "SSD Storage Cepat & Handal",
+      "Unlimited Bandwidth Tanpa Kuota",
+      "Free SSL & Softaculous Installer",
+      "Dukungan PHP Multi-Version (7.4 - 8.3)",
+      "Garansi Uang Kembali 30 Hari Penuh"
+    ],
+    "price": "Rp 32.500",
+    "period": "/bulan",
+    "tag": "Hemat & Cepat",
+    "iconClass": "fa-solid fa-globe",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "da-starter",
+        "name": "Starter DirectAdmin",
+        "price": "Rp 32.500",
+        "period": "/bulan",
+        "specs": [
+          "5 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "10 Addon Domains",
+          "10 FTP Accounts",
+          "10 Email Accounts",
+          "DirectAdmin Control Panel"
+        ]
+      },
+      {
+        "id": "da-premium",
+        "name": "Premium DirectAdmin",
+        "price": "Rp 57.500",
+        "period": "/bulan",
+        "specs": [
+          "20 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "Unlimited Addon Domains",
+          "Unlimited FTP Accounts",
+          "Unlimited Email Accounts",
+          "DirectAdmin Control Panel"
+        ]
+      },
+      {
+        "id": "da-premium-plus",
+        "name": "Premium+ DirectAdmin",
+        "price": "Rp 100.000",
+        "period": "/bulan",
+        "specs": [
+          "70 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "Unlimited Addon Domains",
+          "Unlimited FTP Accounts",
+          "Unlimited Email Accounts",
+          "DirectAdmin Control Panel"
+        ]
+      },
+      {
+        "id": "da-executive",
+        "name": "Executive DirectAdmin",
+        "price": "Rp 140.000",
+        "period": "/bulan",
+        "specs": [
+          "120 GB SSD Storage",
+          "Unlimited Bandwidth",
+          "Unlimited Addon Domains",
+          "Unlimited FTP Accounts",
+          "Unlimited Email Accounts",
+          "DirectAdmin Control Panel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "domain-murah-forwarding",
+    "title": "Domain Murah & DNS Forwarding",
+    "description": "Layanan pendaftaran domain baru, transfer domain, dan setup DNS forwarding / masking ke link tujuan (web, landing page, bot Telegram, affiliate). Bebas biaya renewal tersembunyi.",
+    "category": "Web Hosting",
+    "specs": [
+      "Full Control Akses DNS Management (A, CNAME, TXT, MX)",
+      "Free DNS Forwarding / URL Redirect & Stealth Masking",
+      "Free WHOIS Privacy Protection (Data Pemilik Terlindungi)",
+      "Bisa Diarahkan ke VPS, Hosting, Cloudflare, Blogger, Vercel",
+      "Garansi Domain Aktif & Valid Selama 1 Tahun Penuh"
+    ],
+    "price": "Rp 18.000",
+    "originalPrice": "Rp 35.000",
+    "discountPercent": "48%",
+    "period": "/tahun",
+    "tag": "Instant DNS",
+    "iconClass": "fa-solid fa-globe",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "dom-myid",
+        "name": "Domain .my.id (1 Tahun)",
+        "price": "Rp 18.000",
+        "originalPrice": "Rp 35.000",
+        "period": "/tahun",
+        "specs": [
+          "Ekstensi Resmi .my.id",
+          "Full Akses DNS Management",
+          "Aktif 1 Tahun Penuh",
+          "Proses Cepat Tanpa KTP Rumit"
+        ]
+      },
+      {
+        "id": "dom-xyz-site",
+        "name": "Domain .xyz / .site (1 Tahun)",
+        "price": "Rp 35.000",
+        "originalPrice": "Rp 65.000",
+        "period": "/tahun",
+        "specs": [
+          "Pilihan Ekstensi .xyz atau .site",
+          "Global TLD Populer & Eye-catching",
+          "Full DNS & WHOIS Protection",
+          "Garansi Aktif 1 Tahun"
+        ]
+      },
+      {
+        "id": "dom-com",
+        "name": "Domain .com Komersial (1 Tahun)",
+        "price": "Rp 145.000",
+        "originalPrice": "Rp 195.000",
+        "period": "/tahun",
+        "specs": [
+          "Ekstensi Paling Populer & Terpercaya di Dunia (.com)",
+          "Bebas Request Nama Domain",
+          "Full Akses DNS / Cloudflare Ready",
+          "Free Privacy Protection Selamanya"
+        ]
+      },
+      {
+        "id": "dom-dns-forwarding-setup",
+        "name": "Setup DNS Forwarding + Masking",
+        "price": "Rp 25.000",
+        "originalPrice": "Rp 50.000",
+        "period": "/setup",
+        "specs": [
+          "Jasa Setting Redirect Link ke Domain Baru",
+          "Masking URL / Stealth Cloaking",
+          "Cocok untuk Link Affiliate, Landing Page, Bot",
+          "Support SSL HTTPS Redirect"
+        ]
+      }
+    ]
+  }
+]
