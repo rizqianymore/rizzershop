@@ -38,6 +38,7 @@ import sportsStreamData from './sports-stream.json';
 import cloudAccountsData from './cloud-accounts.json';
 import accountsData from './accounts.json';
 import proxyData from './proxy.json';
+import apiTokensData from './api-tokens.json';
 
 export const vpsStandardProducts = vpsStandardData as ProductItem[];
 export const vpsPremiumProducts = vpsPremiumData as ProductItem[];
@@ -53,6 +54,7 @@ export const sportsStreamProducts = sportsStreamData as ProductItem[];
 export const cloudAccountsProducts = cloudAccountsData as ProductItem[];
 export const accountsProducts = accountsData as ProductItem[];
 export const proxyProducts = proxyData as ProductItem[];
+export const apiTokensProducts = apiTokensData as ProductItem[];
 
 export const productsData: ProductItem[] = [
 	...vpsStandardProducts,
@@ -69,5 +71,6 @@ export const productsData: ProductItem[] = [
 	...cloudAccountsProducts,
 	...accountsProducts,
 	...proxyProducts,
+	...apiTokensProducts,
 ];
 

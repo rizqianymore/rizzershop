@@ -1,0 +1,137 @@
+[
+  {
+    "id": "ai-coding-plan-router",
+    "title": "Coding Plan AI Router",
+    "description": "API Router khusus coding AI dengan performa auto model tercepat. Masa aktif 30 hari dan mendukung semua API key untuk integrasi IDE, Cursor, OpenCode, VS Code, dan AI toolchain lainnya.",
+    "category": "Tools & Lisensi",
+    "specs": [
+      "Masa Aktif 30 Hari",
+      "Support Semua API Key & Router",
+      "Auto Model Tercepat (China & US Node)",
+      "Bisa Connect ke OpenCode, 9Router, Cursor, Cline, dll",
+      "Proses Cepat & Langsung Konek"
+    ],
+    "price": "Rp 129.000",
+    "period": "/30 hari",
+    "tag": "Coding AI",
+    "iconClass": "fa-solid fa-code",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "coding-plan-cn-57m",
+        "name": "Coding Plan China - 57M Token",
+        "price": "Rp 129.000",
+        "period": "/30 hari",
+        "specs": [
+          "Kuota 57 Juta Token",
+          "Routing Auto Model Tercepat (China Node)",
+          "Masa Aktif 30 Hari",
+          "Support Semua API Key & Router"
+        ]
+      },
+      {
+        "id": "coding-plan-cn-120m",
+        "name": "Coding Plan China - 120M Token",
+        "price": "Rp 229.000",
+        "period": "/30 hari",
+        "specs": [
+          "Kuota 120 Juta Token",
+          "Routing Auto Model Tercepat (China Node)",
+          "Masa Aktif 30 Hari",
+          "Support Semua API Key & Router"
+        ]
+      },
+      {
+        "id": "coding-plan-cn-225m",
+        "name": "Coding Plan China - 225M Token",
+        "price": "Rp 380.000",
+        "period": "/30 hari",
+        "specs": [
+          "Kuota 225 Juta Token",
+          "Routing Auto Model Tercepat (China Node)",
+          "Masa Aktif 30 Hari",
+          "Support Semua API Key & Router"
+        ]
+      },
+      {
+        "id": "coding-plan-us-23m",
+        "name": "Coding Plan US - 23M Token",
+        "price": "Rp 129.000",
+        "period": "/30 hari",
+        "specs": [
+          "Kuota 23 Juta Token",
+          "Routing Auto Model Tercepat (US Node)",
+          "Masa Aktif 30 Hari",
+          "Support Semua API Key & Router"
+        ]
+      },
+      {
+        "id": "coding-plan-us-50m",
+        "name": "Coding Plan US - 50M Token",
+        "price": "Rp 229.000",
+        "period": "/30 hari",
+        "specs": [
+          "Kuota 50 Juta Token",
+          "Routing Auto Model Tercepat (US Node)",
+          "Masa Aktif 30 Hari",
+          "Support Semua API Key & Router"
+        ]
+      },
+      {
+        "id": "coding-plan-us-93m",
+        "name": "Coding Plan US - 93M Token",
+        "price": "Rp 380.000",
+        "period": "/30 hari",
+        "specs": [
+          "Kuota 93 Juta Token",
+          "Routing Auto Model Tercepat (US Node)",
+          "Masa Aktif 30 Hari",
+          "Support Semua API Key & Router"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "api-muse-spark",
+    "title": "Muse Spark API Key",
+    "description": "API Key Muse Spark untuk integrasi AI coding, router, dan bot. Bisa langsung connect ke OpenCode, 9Router, dan aneka AI client.",
+    "category": "Tools & Lisensi",
+    "specs": [
+      "Bisa Connect ke OpenCode & 9Router",
+      "Pilihan Saldo $20 & $60",
+      "Proses Cepat & Langsung Pakai",
+      "Garansi Key Valid & Aktif"
+    ],
+    "price": "Rp 23.000",
+    "period": "/key",
+    "tag": "API Key",
+    "iconClass": "fa-solid fa-key",
+    "available": true,
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "muse-spark-20",
+        "name": "Muse Spark API Key $20",
+        "price": "Rp 23.000",
+        "period": "/key",
+        "specs": [
+          "Saldo $20 Credit",
+          "Bisa Connect ke OpenCode / 9Router",
+          "Garansi Key Valid Saat Diberikan"
+        ]
+      },
+      {
+        "id": "muse-spark-60",
+        "name": "Muse Spark API Key $60",
+        "price": "Rp 50.000",
+        "period": "/key",
+        "specs": [
+          "Saldo $60 Credit",
+          "Bisa Connect ke OpenCode / 9Router",
+          "Garansi Key Valid Saat Diberikan"
+        ]
+      }
+    ]
+  }
+]

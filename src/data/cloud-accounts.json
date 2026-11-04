@@ -87,7 +87,7 @@
     "category": "Akun Cloud",
     "specs": [
       "Siap Create EC2 Instance (Linux / Windows)",
-      "Pilihan Saldo Credit $100 s/d $300 & Free Tier 12 Bulan",
+      "Pilihan AWS Free Tier 12 Bulan & Saldo Credit 00",
       "Akses Penuh Root Akun AWS Console & Email",
       "Support Berbagai Region Global (Singapore, US, Tokyo, dll)",
       "Garansi Akun Login Pertama & First Instance Launch (1 Jam)",
@@ -113,19 +113,6 @@
           "Siap Deploy EC2 Micro / Small Instance",
           "Akses Penuh Email + Root Password",
           "Garansi 1 Jam: Login & First Launch Valid"
-        ]
-      },
-      {
-        "id": "aws-credit-100",
-        "name": "AWS Credit $100 Promo Saldo",
-        "price": "Rp 165.000",
-        "originalPrice": "Rp 290.000",
-        "period": "/akun",
-        "specs": [
-          "Credit Saldo Promo $100 Terisi Otomatis",
-          "Bebas Deploy Instance Besar (Medium / Large)",
-          "Masa Aktif Credit Hingga 1 Tahun",
-          "Garansi 1 Jam: Saldo Masuk Utuh & Valid"
         ]
       },
       {
