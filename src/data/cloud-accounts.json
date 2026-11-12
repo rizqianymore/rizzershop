@@ -10,7 +10,7 @@
       "Pilihan Limit: 3 Droplet (Hemat) & 10 Droplet (Power)",
       "Tersedia Metode High-Trust (PayPal Verified)",
       "Akses Penuh Akun (Email & Password)",
-      "Garansi Login Pertama & Create 1 Droplet Pertama (1 Jam Klaim)",
+      "Non-Garansi Pemakaian (Garansi Hanya Saat Gagal Login Pertama Kali)",
       "Wajib: Gunakan Browser Fresh/Incognito & IP Bersih Saat Pertama Login"
     ],
     "price": "Rp 95.000",
@@ -20,7 +20,7 @@
     "tag": "Best Seller Cloud",
     "iconClass": "fa-brands fa-digital-ocean",
     "available": true,
-    "hasWarranty": true,
+    "hasWarranty": false,
     "variants": [
       {
         "id": "do-3-droplet-vcc",
@@ -33,7 +33,7 @@
           "Metode Verifikasi: VCC Valid",
           "Masa Aktif Saldo 2 Bulan",
           "Akses Penuh Akun & Email Terkait",
-          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+          "Garansi Hanya Jika Gagal Login Pertama Kali"
         ]
       },
       {
@@ -47,7 +47,7 @@
           "Metode Verifikasi: PayPal Verified (Lebih Tahan Suspend)",
           "Masa Aktif Saldo 2 Bulan",
           "Akses Penuh Akun & Email",
-          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+          "Garansi Hanya Jika Gagal Login Pertama Kali"
         ]
       },
       {
@@ -61,7 +61,7 @@
           "Metode Verifikasi: VCC (Virtual Credit Card)",
           "Masa Aktif Saldo 2 Bulan",
           "Akses Penuh Akun & Email",
-          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+          "Garansi Hanya Jika Gagal Login Pertama Kali"
         ]
       },
       {
@@ -75,7 +75,7 @@
           "Metode Verifikasi: PayPal Verified (Paling Kuat & Stabil)",
           "Masa Aktif Saldo 2 Bulan",
           "Akses Penuh Akun & Email",
-          "Garansi 1 Jam: Login & Create 1 Droplet Pertama"
+          "Garansi Hanya Jika Gagal Login Pertama Kali"
         ]
       }
     ]
@@ -90,7 +90,7 @@
       "Deploy Nanode, Standard VPS, & High Memory Bebas",
       "Network Cepat 40 Gbps Inbound & Low Latency",
       "Akses Penuh Email & Akun Linode Cloud Manager",
-      "Garansi 1 Jam: Login Pertama & Saldo Utuh $100",
+      "Non-Garansi Pemakaian (Garansi Hanya Saat Gagal Login Pertama Kali)",
       "Tips: Gunakan IP Lokal Bersih Saat Mengakses Manager"
     ],
     "price": "Rp 129.000",
@@ -100,7 +100,7 @@
     "tag": "Linode $100",
     "iconClass": "fa-brands fa-linode",
     "available": true,
-    "hasWarranty": true,
+    "hasWarranty": false,
     "variants": [
       {
         "id": "linode-credit-100",
@@ -112,7 +112,7 @@
           "Saldo $100 Otomatis Aktif di Dashboard",
           "Siap Deploy Linode VPS Kapan Saja",
           "Full Akses Akun & Email Master",
-          "Garansi 1 Jam: Login Valid & Saldo Siap Pakai"
+          "Garansi Hanya Jika Gagal Login Pertama Kali"
         ]
       }
     ]
