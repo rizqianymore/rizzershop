@@ -87,10 +87,10 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
   const activeResourceList = planId === 'basic'
     ? vpsOptionsData.basicResources
     : planId === 'premium'
-    ? vpsOptionsData.premiumResources
-    : planId === 'dedicated'
-    ? vpsOptionsData.dedicatedResources
-    : vpsOptionsData.rackResources;
+      ? vpsOptionsData.premiumResources
+      : planId === 'dedicated'
+        ? vpsOptionsData.dedicatedResources
+        : vpsOptionsData.rackResources;
 
   const currentResource = activeResourceList.find((r) => r.id === resourceId) || activeResourceList[0];
   const currentRegion = vpsOptionsData.regions.find((r) => r.id === regionId) || vpsOptionsData.regions[0];
@@ -121,7 +121,7 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
           id: 'vps-custom',
           title: 'Cloud Server & Datacenter',
           category: 'VPS',
-          price: 'Rp 20.000',
+          price: 'Rp 25.000',
           period: '/bulan',
           hasWarranty: true,
         });
@@ -221,8 +221,8 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
 
     const itemTitle = isServer
       ? (isColocation
-          ? `[Colocation Rack Space] ${(currentResource as any).name}`
-          : isDedicated
+        ? `[Colocation Rack Space] ${(currentResource as any).name}`
+        : isDedicated
           ? `[Dedicated Server] ${(currentResource as any).name}`
           : `${serverType === 'vps' ? 'Cloud VPS' : 'Windows RDP'} [${currentPlan.name}] ${(currentResource as any).ram} (${currentRegion.code})`)
       : selectedProduct.title;
@@ -247,6 +247,18 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
           <form onSubmit={handleSendOrder} className="space-y-6">
             {isServer && (
               <div className="space-y-6">
+                {/* Notice Kondisi Rawan */}
+                <div className="rounded-lg border border-amber-500/30 bg-amber-950/20 p-4 text-xs">
+                  <div className="flex items-center gap-2 text-amber-400 font-semibold mb-1">
+                    <ShieldAlert className="h-4 w-4 shrink-0" />
+                    <span>Perhatian: Kondisi Cloud Sedang Rawan</span>
+                  </div>
+                  <p className="text-zinc-300 leading-relaxed text-[11px]">
+                    Karena kondisi jaringan dan provider cloud global yang sedang rawan, estimasi durasi masa aktif dan ketahanan kualitas rata-rata berkisar <strong>maksimal ~20 harian</strong>.
+                    Untuk <strong>Tier High</strong> harga lebih tinggi karena menggunakan alokasi <strong>Provider Khusus</strong> guna menjamin kestabilan lebih prima.
+                  </p>
+                </div>
+
                 <div className="rounded-lg border border-zinc-850 bg-zinc-950 p-5 space-y-4">
                   <div className="flex items-center gap-2 pb-3 border-b border-zinc-850">
                     <span className="flex h-5 w-5 items-center justify-center rounded-full bg-blue-600/20 text-blue-400 text-xs font-bold">1</span>
@@ -279,12 +291,12 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                     {vpsOptionsData.plans.map((p) => {
                       const isSelected = planId === p.id;
                       const priceBadge = p.id === 'basic'
-                        ? 'Mulai Rp 20.000'
+                        ? (serverType === 'rdp' ? 'Mulai Rp 40.000' : 'Mulai Rp 25.000')
                         : p.id === 'premium'
-                        ? 'Mulai Rp 70.000'
-                        : p.id === 'dedicated'
-                        ? 'Mulai Rp 3.300.000'
-                        : 'Mulai Rp 950.000';
+                          ? (serverType === 'rdp' ? 'Mulai Rp 95.000' : 'Mulai Rp 75.000')
+                          : p.id === 'dedicated'
+                            ? 'Mulai Rp 3.300.000'
+                            : 'Mulai Rp 950.000';
                       return (
                         <button
                           key={p.id}
@@ -295,19 +307,18 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                             const newResourceList = newPlan === 'basic'
                               ? vpsOptionsData.basicResources
                               : newPlan === 'premium'
-                              ? vpsOptionsData.premiumResources
-                              : newPlan === 'dedicated'
-                              ? vpsOptionsData.dedicatedResources
-                              : vpsOptionsData.rackResources;
+                                ? vpsOptionsData.premiumResources
+                                : newPlan === 'dedicated'
+                                  ? vpsOptionsData.dedicatedResources
+                                  : vpsOptionsData.rackResources;
                             if (newResourceList.length > 0) {
                               setResourceId(newResourceList[0].id);
                             }
                           }}
-                          className={`rounded-md p-4 text-left transition border ${
-                            isSelected
+                          className={`rounded-md p-4 text-left transition border ${isSelected
                               ? 'border-blue-500 bg-blue-950/30 shadow-sm ring-1 ring-blue-500/50'
                               : 'border-zinc-850 bg-zinc-900/60 text-zinc-400 hover:border-zinc-700 hover:text-white'
-                          }`}
+                            }`}
                         >
                           <div className="flex items-center justify-between mb-1.5">
                             <span className="font-bold text-xs text-white">{p.name}</span>
@@ -346,11 +357,10 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                             key={b.id}
                             type="button"
                             onClick={() => setBillingCycle(b.id as 'monthly' | 'yearly')}
-                            className={`rounded-md p-3.5 text-left transition border ${
-                              isBSelected
+                            className={`rounded-md p-3.5 text-left transition border ${isBSelected
                                 ? 'border-blue-500 bg-blue-950/40 text-white shadow-sm ring-1 ring-blue-500/50'
                                 : 'border-zinc-800 bg-zinc-900/60 text-zinc-400 hover:border-zinc-700'
-                            }`}
+                              }`}
                           >
                             <div className="flex items-center justify-between font-bold text-xs text-white mb-1">
                               <span>{b.name}</span>
@@ -374,8 +384,8 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                         {isColocation
                           ? 'Pilih Ukuran Rack Space (1U - 45U Full Rack)'
                           : isDedicated
-                          ? 'Pilihan Server Hardware (Dual Xeon)'
-                          : `Kapasitas Hardware (${currentPlan.name})`}
+                            ? 'Pilihan Server Hardware (Dual Xeon)'
+                            : `Kapasitas Hardware (${currentPlan.name})`}
                       </h2>
                     </div>
                   </div>
@@ -390,11 +400,10 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                             key={res.id}
                             type="button"
                             onClick={() => setResourceId(res.id)}
-                            className={`rounded-md p-4 text-left transition border ${
-                              isSelected
+                            className={`rounded-md p-4 text-left transition border ${isSelected
                                 ? 'border-blue-500 bg-blue-950/30 shadow-sm ring-1 ring-blue-500/50'
                                 : 'border-zinc-850 bg-zinc-900/60 text-zinc-400 hover:border-zinc-700 hover:text-white'
-                            }`}
+                              }`}
                           >
                             <div className="flex items-center justify-between mb-2">
                               <span className="font-bold text-sm text-white">{res.name}</span>
@@ -422,11 +431,10 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                             key={res.id}
                             type="button"
                             onClick={() => setResourceId(res.id)}
-                            className={`rounded-md p-4 text-left transition border ${
-                              isSelected
+                            className={`rounded-md p-4 text-left transition border ${isSelected
                                 ? 'border-blue-500 bg-blue-950/30 shadow-sm ring-1 ring-blue-500/50'
                                 : 'border-zinc-850 bg-zinc-900/60 text-zinc-400 hover:border-zinc-700 hover:text-white'
-                            }`}
+                              }`}
                           >
                             <div className="flex items-center justify-between mb-2">
                               <span className="font-bold text-sm text-white">{res.name}</span>
@@ -455,11 +463,10 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                           key={res.id}
                           type="button"
                           onClick={() => setResourceId(res.id)}
-                          className={`rounded-md p-3.5 text-left transition border ${
-                            isSelected
+                          className={`rounded-md p-3.5 text-left transition border ${isSelected
                               ? 'border-blue-500 bg-blue-950/30 shadow-sm ring-1 ring-blue-500/50'
                               : 'border-zinc-850 bg-zinc-900/60 text-zinc-400 hover:border-zinc-700 hover:text-white'
-                          }`}
+                            }`}
                         >
                           <div className="flex items-baseline justify-between mb-1.5">
                             <span className="font-bold text-sm text-white">{res.ram}</span>
@@ -560,14 +567,14 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                 {isColocation
                   ? (currentResource as any).name
                   : isDedicated
-                  ? (currentResource as any).name
-                  : isServer
-                  ? (serverType === 'vps' ? 'Cloud VPS Linux' : 'Windows RDP')
-                  : selectedProduct.title}
+                    ? (currentResource as any).name
+                    : isServer
+                      ? (serverType === 'vps' ? 'Cloud VPS Linux' : 'Windows RDP')
+                      : selectedProduct.title}
               </h3>
               <div className="text-xl font-extrabold text-white">{displayTotalPrice}</div>
             </div>
-            
+
             <div className="flex items-center justify-between gap-3 p-3 rounded-md bg-black border border-zinc-850">
               <label htmlFor="checkout-quantity" className="text-[10px] font-bold text-zinc-500 uppercase">Jumlah Unit</label>
               <input

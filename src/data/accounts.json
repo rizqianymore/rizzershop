@@ -87,38 +87,17 @@
     ]
   },
   {
-    "id": "acc-gemini-pro",
-    "title": "Google Gemini Advanced (3 Bulan)",
-    "description": "Langganan Google Gemini Advanced dengan akses AI Google tercanggih, context window besar, dan integrasi Google Workspace.",
-    "category": "Akun Premium",
-    "specs": [
-      "Akses Model Gemini Ultra / 1.5 Pro",
-      "Context Window Besar & Fitur AI Terbaru",
-      "Integrasi Google Workspace & Drive",
-      "Durasi 3 Bulan",
-      "Garansi Penuh 3 Bulan"
-    ],
-    "price": "Rp 30.000",
-    "originalPrice": "Rp 90.000",
-    "discountPercent": "67%",
-    "period": "/3 bulan",
-    "tag": "Best AI Deal",
-    "iconClass": "fa-solid fa-wand-magic-sparkles",
-    "available": true,
-    "hasWarranty": true
-  },
-  {
     "id": "acc-spotify",
     "title": "Spotify Premium",
-    "description": "Dengarkan musik favorit tanpa gangguan iklan dan kualitas audio terbaik.",
+    "description": "Dengarkan lagu favorit bebas iklan, kualitas audio 320kbps, dan download offline. Tersedia pilihan Full Garansi & Hemat No Garansi.",
     "category": "Akun Premium",
     "specs": [
-      "Bebas Iklan & Download Offline",
-      "Audio Quality 320kbps",
-      "Pilihan Durasi 1, 2, atau 3 Bulan",
-      "Garansi Penuh Selama Masa Aktif"
+      "Bebas Iklan & Download Offline Musik",
+      "Audio Quality Extreme 320kbps",
+      "Pilihan 1 Bulan Full Garansi atau Paket Hemat",
+      "Bisa di Android, iOS, Windows, Mac & Web Player"
     ],
-    "price": "Rp 25.000",
+    "price": "Rp 15.000",
     "originalPrice": "Rp 55.000",
     "discountPercent": "55%",
     "period": "/bulan",
@@ -128,39 +107,51 @@
     "hasWarranty": true,
     "variants": [
       {
-        "id": "spotify-1m",
-        "name": "1 Bulan",
-        "price": "Rp 25.000",
+        "id": "spotify-1m-garansi",
+        "name": "1 Bulan (Full Garansi)",
+        "price": "Rp 35.000",
         "period": "/1 bulan",
         "specs": [
-          "Garansi 1 Bulan",
-          "Bebas Iklan",
-          "Download Offline",
-          "Kualitas 320kbps"
+          "Masa Aktif 1 Bulan Penuh",
+          "Garansi Replace Penuh 30 Hari",
+          "Bebas Iklan & Kualitas 320kbps",
+          "Download Offline Lagu"
         ]
       },
       {
-        "id": "spotify-2m",
-        "name": "2 Bulan",
-        "price": "Rp 50.000",
-        "period": "/2 bulan",
-        "specs": [
-          "Garansi Penuh 2 Bulan",
-          "Bebas Iklan",
-          "Download Offline",
-          "Kualitas 320kbps"
-        ]
-      },
-      {
-        "id": "spotify-3m",
-        "name": "3 Bulan",
-        "price": "Rp 75.000",
+        "id": "spotify-3m-nogaransi",
+        "name": "3 Bulan (No Garansi)",
+        "price": "Rp 27.000",
         "period": "/3 bulan",
         "specs": [
-          "Garansi Penuh 3 Bulan",
-          "Bebas Iklan",
-          "Download Offline",
-          "Kualitas 320kbps"
+          "Durasi Akun 3 Bulan",
+          "Tipe No Garansi (Non-Garansi)",
+          "Sangat Hemat untuk Pemakaian Santai",
+          "Bebas Iklan & Kualitas 320kbps"
+        ]
+      },
+      {
+        "id": "spotify-2m-nogaransi",
+        "name": "2 Bulan (No Garansi)",
+        "price": "Rp 20.000",
+        "period": "/2 bulan",
+        "specs": [
+          "Durasi Akun 2 Bulan",
+          "Tipe No Garansi (Non-Garansi)",
+          "Bebas Iklan & Kualitas 320kbps",
+          "Download Offline Lagu"
+        ]
+      },
+      {
+        "id": "spotify-1m-nogaransi",
+        "name": "1 Bulan (No Garansi)",
+        "price": "Rp 15.000",
+        "period": "/1 bulan",
+        "specs": [
+          "Durasi Akun 1 Bulan",
+          "Tipe No Garansi (Non-Garansi)",
+          "Harga Super Murah Meriah",
+          "Bebas Iklan & Kualitas 320kbps"
         ]
       }
     ]
@@ -188,22 +179,72 @@
   {
     "id": "acc-netflix",
     "title": "Netflix Premium (Non-TV)",
-    "description": "Streaming film dan series favorit kualitas 4K di semua perangkat portabel Anda.",
+    "description": "Streaming film dan series favorit kualitas 4K UHD di perangkat portabel Anda (HP, Tablet, Laptop, PC). Tersedia pilihan Full Garansi & Hemat No Garansi.",
     "category": "Akun Premium",
     "specs": [
       "1 Profile Pribadi (1 User)",
-      "Khusus HP, Tablet, Laptop & PC (Tidak Bisa TV)",
-      "Kualitas Full HD / Ultra HD",
-      "Durasi 1 Bulan & Garansi Penuh"
+      "Khusus HP, Tablet, Laptop & PC (Non-TV)",
+      "Kualitas Full HD / Ultra HD 4K",
+      "Pilihan 1 Bulan Full Garansi atau Paket Hemat No Garansi"
     ],
-    "price": "Rp 28.000",
+    "price": "Rp 15.000",
     "originalPrice": "Rp 65.000",
     "discountPercent": "57%",
-    "period": "/1 bulan",
+    "period": "/bulan",
     "tag": "1P Non-TV",
     "iconClass": "fa-solid fa-film",
     "available": true,
-    "hasWarranty": true
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "netflix-1m-garansi",
+        "name": "1 Bulan (Full Garansi)",
+        "price": "Rp 35.000",
+        "period": "/1 bulan",
+        "specs": [
+          "Masa Aktif 1 Bulan Penuh",
+          "Garansi Replace Penuh 30 Hari",
+          "1 Profile Pribadi",
+          "Kualitas 4K Ultra HD"
+        ]
+      },
+      {
+        "id": "netflix-3m-nogaransi",
+        "name": "3 Bulan (No Garansi)",
+        "price": "Rp 27.000",
+        "period": "/3 bulan",
+        "specs": [
+          "Durasi Akun 3 Bulan",
+          "Tipe No Garansi (Non-Garansi)",
+          "1 Profile Pribadi (Non-TV)",
+          "Kualitas 4K Ultra HD"
+        ]
+      },
+      {
+        "id": "netflix-2m-nogaransi",
+        "name": "2 Bulan (No Garansi)",
+        "price": "Rp 20.000",
+        "period": "/2 bulan",
+        "specs": [
+          "Durasi Akun 2 Bulan",
+          "Tipe No Garansi (Non-Garansi)",
+          "1 Profile Pribadi (Non-TV)",
+          "Kualitas 4K Ultra HD"
+        ]
+      },
+      {
+        "id": "netflix-1m-nogaransi",
+        "name": "1 Bulan (No Garansi)",
+        "price": "Rp 15.000",
+        "period": "/1 bulan",
+        "specs": [
+          "Durasi Akun 1 Bulan",
+          "Tipe No Garansi (Non-Garansi)",
+          "1 Profile Pribadi (Non-TV)",
+          "Kualitas 4K Ultra HD"
+        ]
+      }
+    ]
   },
   {
     "id": "acc-capcut",

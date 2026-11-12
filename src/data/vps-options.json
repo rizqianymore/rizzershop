@@ -18,17 +18,17 @@
   "plans": [
     {
       "id": "basic",
-      "name": "Basic Cloud VPS",
-      "tag": "Budget & Hemat",
-      "desc": "Cocok untuk testing, bot Telegram, VPN pribadi, proxy & web ringan. Harga super terjangkau!",
-      "warranty": "Garansi 7 hari (1x replace)"
+      "name": "Low Cloud VPS / RDP",
+      "tag": "Tier Low",
+      "desc": "Pilihan ekonomis untuk bot Telegram, VPN, proxy & testing. Catatan: Kondisi cloud sedang rawan, estimasi durasi & kualitas maks ~20 harian.",
+      "warranty": "Kondisi Rawan: Estimasi kualitas maks ~20 hari"
     },
     {
       "id": "premium",
-      "name": "Premium Private Cloud",
-      "tag": "Unshared Cloud",
-      "desc": "Pay As You Go Cloud VPS — Unshared Resources, Bandwidth Unmetered, NVMe SSD, Uptime 99.9%.",
-      "warranty": "Garansi penuh 30 hari & SLA Uptime 99.9%"
+      "name": "High Private Cloud (Provider Khusus)",
+      "tag": "Provider Khusus",
+      "desc": "High Tier menggunakan Provider Khusus (Dedicated Resources, NVMe SSD). Sifatnya lebih mahal untuk stabilitas ekstra. Catatan: Kondisi sedang rawan, estimasi durasi maks ~20 harian.",
+      "warranty": "Kondisi Rawan: Estimasi kualitas maks ~20 hari"
     },
     {
       "id": "dedicated",
@@ -52,8 +52,8 @@
       "vcpu": "1 vCPU",
       "storage": "25 GB SSD",
       "transfer": "1,000 GB Transfer",
-      "priceVps": 20000,
-      "priceRdp": 30000
+      "priceVps": 25000,
+      "priceRdp": 40000
     },
     {
       "id": "b-2gb-1c",
@@ -61,8 +61,8 @@
       "vcpu": "1 vCPU",
       "storage": "50 GB SSD",
       "transfer": "2,000 GB Transfer",
-      "priceVps": 30000,
-      "priceRdp": 40000
+      "priceVps": 35000,
+      "priceRdp": 50000
     },
     {
       "id": "b-2gb-2c",
@@ -70,8 +70,8 @@
       "vcpu": "2 vCPUs",
       "storage": "60 GB SSD",
       "transfer": "3,000 GB Transfer",
-      "priceVps": 40000,
-      "priceRdp": 50000
+      "priceVps": 45000,
+      "priceRdp": 60000
     },
     {
       "id": "b-4gb-2c",
@@ -79,8 +79,8 @@
       "vcpu": "2 vCPUs",
       "storage": "80 GB SSD",
       "transfer": "4,000 GB Transfer",
-      "priceVps": 55000,
-      "priceRdp": 65000
+      "priceVps": 60000,
+      "priceRdp": 75000
     },
     {
       "id": "b-8gb-2c",
@@ -88,8 +88,8 @@
       "vcpu": "2 vCPUs",
       "storage": "100 GB SSD",
       "transfer": "5,000 GB Transfer",
-      "priceVps": 75000,
-      "priceRdp": 85000
+      "priceVps": 80000,
+      "priceRdp": 95000
     },
     {
       "id": "b-8gb-4c",
@@ -97,8 +97,8 @@
       "vcpu": "4 vCPUs",
       "storage": "160 GB SSD",
       "transfer": "5,000 GB Transfer",
-      "priceVps": 95000,
-      "priceRdp": 105000
+      "priceVps": 100000,
+      "priceRdp": 115000
     },
     {
       "id": "b-16gb-4c",
@@ -106,8 +106,8 @@
       "vcpu": "4 vCPUs",
       "storage": "200 GB SSD",
       "transfer": "8,000 GB Transfer",
-      "priceVps": 135000,
-      "priceRdp": 145000
+      "priceVps": 140000,
+      "priceRdp": 155000
     },
     {
       "id": "b-16gb-8c",
@@ -115,8 +115,8 @@
       "vcpu": "8 vCPUs",
       "storage": "320 GB SSD",
       "transfer": "6,000 GB Transfer",
-      "priceVps": 175000,
-      "priceRdp": 185000
+      "priceVps": 180000,
+      "priceRdp": 195000
     },
     {
       "id": "b-32gb-8c",
@@ -124,8 +124,8 @@
       "vcpu": "8 vCPUs",
       "storage": "400 GB SSD",
       "transfer": "10,000 GB Transfer",
-      "priceVps": 260000,
-      "priceRdp": 275000
+      "priceVps": 265000,
+      "priceRdp": 285000
     }
   ],
   "premiumResources": [
@@ -135,8 +135,8 @@
       "vcpu": "1 Core",
       "storage": "20 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 70000,
-      "priceRdp": 85000
+      "priceVps": 75000,
+      "priceRdp": 95000
     },
     {
       "id": "p-2gb-2c",
@@ -144,8 +144,8 @@
       "vcpu": "2 Cores",
       "storage": "40 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 130000,
-      "priceRdp": 145000
+      "priceVps": 135000,
+      "priceRdp": 155000
     },
     {
       "id": "p-4gb-2c",
@@ -153,8 +153,8 @@
       "vcpu": "2 Cores",
       "storage": "60 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 175000,
-      "priceRdp": 190000
+      "priceVps": 180000,
+      "priceRdp": 200000
     },
     {
       "id": "p-4gb-4c",
@@ -162,8 +162,8 @@
       "vcpu": "4 Cores",
       "storage": "80 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 235000,
-      "priceRdp": 255000
+      "priceVps": 240000,
+      "priceRdp": 265000
     },
     {
       "id": "p-8gb-4c",
@@ -171,8 +171,8 @@
       "vcpu": "4 Cores",
       "storage": "160 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 335000,
-      "priceRdp": 355000
+      "priceVps": 340000,
+      "priceRdp": 365000
     },
     {
       "id": "p-16gb-4c",
@@ -180,8 +180,8 @@
       "vcpu": "4 Cores",
       "storage": "200 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 475000,
-      "priceRdp": 500000
+      "priceVps": 480000,
+      "priceRdp": 510000
     },
     {
       "id": "p-16gb-8c",
@@ -189,8 +189,8 @@
       "vcpu": "8 Cores",
       "storage": "320 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 595000,
-      "priceRdp": 625000
+      "priceVps": 600000,
+      "priceRdp": 635000
     },
     {
       "id": "p-32gb-8c",
@@ -198,8 +198,8 @@
       "vcpu": "8 Cores",
       "storage": "400 GB SSD Storage",
       "transfer": "Bandwidth Unmetered",
-      "priceVps": 880000,
-      "priceRdp": 910000
+      "priceVps": 885000,
+      "priceRdp": 920000
     }
   ],
   "dedicatedResources": [
@@ -393,34 +393,52 @@
       {
         "id": "ubuntu",
         "name": "Ubuntu",
-        "versions": ["Ubuntu 24.04 LTS", "Ubuntu 22.04 LTS"]
+        "versions": [
+          "Ubuntu 24.04 LTS",
+          "Ubuntu 22.04 LTS"
+        ]
       },
       {
         "id": "debian",
         "name": "Debian",
-        "versions": ["Debian 12 Bookworm", "Debian 11 Bullseye"]
+        "versions": [
+          "Debian 12 Bookworm",
+          "Debian 11 Bullseye"
+        ]
       },
       {
         "id": "almalinux",
         "name": "AlmaLinux",
-        "versions": ["AlmaLinux 9", "AlmaLinux 8"]
+        "versions": [
+          "AlmaLinux 9",
+          "AlmaLinux 8"
+        ]
       },
       {
         "id": "centos",
         "name": "CentOS",
-        "versions": ["CentOS Stream 9", "CentOS 7"]
+        "versions": [
+          "CentOS Stream 9",
+          "CentOS 7"
+        ]
       }
     ],
     "rdp": [
       {
         "id": "win-server",
         "name": "Windows Server",
-        "versions": ["Windows Server 2022", "Windows Server 2019"]
+        "versions": [
+          "Windows Server 2022",
+          "Windows Server 2019"
+        ]
       },
       {
         "id": "win-client",
         "name": "Windows Pro",
-        "versions": ["Windows 11 Pro", "Windows 10 Pro"]
+        "versions": [
+          "Windows 11 Pro",
+          "Windows 10 Pro"
+        ]
       }
     ]
   }

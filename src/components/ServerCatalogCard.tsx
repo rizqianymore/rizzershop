@@ -8,15 +8,15 @@ interface ServerCatalogCardProps {
 export function ServerCatalogCard({ type }: ServerCatalogCardProps) {
   if (type === 'basic') {
     return (
-      <div className="group flex flex-col justify-between rounded-lg bg-zinc-950 p-5 transition hover:bg-zinc-900/60 min-h-[160px] h-full">
+      <div className="group flex flex-col justify-between rounded-lg bg-zinc-950 p-5 transition hover:bg-zinc-900/60 min-h-[160px] h-full border border-zinc-900">
         <div className="flex-1">
           {/* Header */}
           <div className="flex items-center justify-between mb-4">
             <Badge variant="outline" className="border-blue-500/30 bg-blue-950/40 text-blue-400 text-[10px] font-normal px-2 py-0.5 rounded">
-              Standard VPS
+              Tier Low
             </Badge>
-            <Badge className="bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-medium px-2 py-0.5 rounded">
-              Budget & Hemat
+            <Badge className="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-[10px] font-medium px-2 py-0.5 rounded">
+              Durasi Maks ~20 Hari
             </Badge>
           </div>
 
@@ -26,13 +26,13 @@ export function ServerCatalogCard({ type }: ServerCatalogCardProps) {
               <i className="fa-solid fa-server text-lg"></i>
             </div>
             <h3 className="text-sm font-semibold text-white group-hover:text-blue-200 transition-colors">
-              Standard Cloud VPS
+              Cloud VPS Low
             </h3>
           </div>
 
           {/* Description */}
           <p className="mt-3 text-[11px] text-zinc-400 leading-relaxed line-clamp-2 group-hover:text-zinc-300">
-            Pilihan ekonomis untuk deploy bot Telegram, VPN pribadi, proxy, atau web hosting ringan.
+            Pilihan ekonomis untuk bot Telegram, VPN pribadi, proxy, atau web ringan. Catatan: Kondisi cloud rawan, ketahanan maks ~20 hari.
           </p>
         </div>
 
@@ -41,10 +41,10 @@ export function ServerCatalogCard({ type }: ServerCatalogCardProps) {
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5 mb-0.5">
               <span className="text-[11px] text-zinc-500 line-through font-medium">Rp 35.000</span>
-              <span className="text-[9px] font-bold text-rose-400 bg-rose-950/70 border border-rose-500/30 px-1 py-0.2 rounded">-42%</span>
+              <span className="text-[9px] font-bold text-rose-400 bg-rose-950/70 border border-rose-500/30 px-1 py-0.2 rounded">-28%</span>
             </div>
             <div className="flex flex-wrap items-baseline gap-1">
-              <span className="text-base font-bold text-white tracking-tight">Rp 20.000</span>
+              <span className="text-base font-bold text-white tracking-tight">Rp 25.000</span>
               <span className="text-[11px] text-zinc-500 font-normal whitespace-nowrap">/bulan</span>
             </div>
           </div>
@@ -62,15 +62,15 @@ export function ServerCatalogCard({ type }: ServerCatalogCardProps) {
 
   if (type === 'premium') {
     return (
-      <div className="group flex flex-col justify-between rounded-lg bg-zinc-950 p-5 transition hover:bg-zinc-900/60 min-h-[160px] h-full">
+      <div className="group flex flex-col justify-between rounded-lg bg-zinc-950 p-5 transition hover:bg-zinc-900/60 min-h-[160px] h-full border border-zinc-900">
         <div className="flex-1">
           {/* Header */}
           <div className="flex items-center justify-between mb-4">
-            <Badge variant="outline" className="border-blue-500/30 bg-blue-950/40 text-blue-400 text-[10px] font-normal px-2 py-0.5 rounded">
-              Premium VPS
+            <Badge variant="outline" className="border-purple-500/30 bg-purple-950/40 text-purple-300 text-[10px] font-normal px-2 py-0.5 rounded">
+              Tier High
             </Badge>
             <Badge className="bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-medium px-2 py-0.5 rounded">
-              Unshared 100%
+              Provider Khusus
             </Badge>
           </div>
 
@@ -80,13 +80,13 @@ export function ServerCatalogCard({ type }: ServerCatalogCardProps) {
               <i className="fa-solid fa-bolt text-lg"></i>
             </div>
             <h3 className="text-sm font-semibold text-white group-hover:text-blue-200 transition-colors">
-              Premium Private Cloud
+              High Private Cloud
             </h3>
           </div>
 
           {/* Description */}
           <p className="mt-3 text-[11px] text-zinc-400 leading-relaxed line-clamp-2 group-hover:text-zinc-300">
-            Pay As You Go Cloud VPS — Unshared Resources, Bandwidth Unmetered, NVMe SSD, Uptime 99.9%.
+            Menggunakan Provider Khusus (Dedicated Resources & NVMe SSD) untuk performa lebih tinggi. Catatan: Kondisi rawan, maks ~20 hari.
           </p>
         </div>
 
@@ -95,10 +95,10 @@ export function ServerCatalogCard({ type }: ServerCatalogCardProps) {
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5 mb-0.5">
               <span className="text-[11px] text-zinc-500 line-through font-medium">Rp 110.000</span>
-              <span className="text-[9px] font-bold text-rose-400 bg-rose-950/70 border border-rose-500/30 px-1 py-0.2 rounded">-36%</span>
+              <span className="text-[9px] font-bold text-rose-400 bg-rose-950/70 border border-rose-500/30 px-1 py-0.2 rounded">-31%</span>
             </div>
             <div className="flex flex-wrap items-baseline gap-1">
-              <span className="text-base font-bold text-white tracking-tight">Rp 70.000</span>
+              <span className="text-base font-bold text-white tracking-tight">Rp 75.000</span>
               <span className="text-[11px] text-zinc-500 font-normal whitespace-nowrap">/bulan</span>
             </div>
           </div>

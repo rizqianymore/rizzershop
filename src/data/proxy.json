@@ -1,25 +1,91 @@
 [
   {
     "id": "proxy-residential-rotasi",
-    "title": "Proxy Residential 1 GB",
-    "description": "Proxy Residential IP asli perumahan kuota 1 GB. Support rotasi otomatis per request atau sticky session, high trust score, anti-ban, dan akses 50M+ pool IP.",
+    "title": "Proxy Residential Rotasi",
+    "description": "Proxy Residential IP asli perumahan dengan pool 50M+ IP global. Support rotasi otomatis per request atau sticky session, high trust score, anti-ban, cocok untuk AI agent, crawler, bot, dan scraping.",
     "category": "Proxy",
     "specs": [
-      "Kuota 1 GB Bandwidth (Aktif 30 Hari)",
       "Real Residential IP Pool Global & Indonesia",
-      "Pilihan Rotasi Per Request atau Sticky 10-30 Menit",
+      "Pilihan Rotasi Per Request atau Sticky Session",
       "Protokol Lengkap HTTP, HTTPS, SOCKS5",
       "High Trust Score & Anti-Detect",
-      "Support Botting, Scraping, Shopee, FB Ads, TikTok",
+      "Support AI Agent, Crawler, Botting, Sosmed, Scraping",
       "Garansi Kuota Utuh & Aktif Penuh"
     ],
-    "price": "Rp 45.000",
-    "originalPrice": "Rp 75.000",
-    "discountPercent": "40%",
-    "period": "/1 GB",
+    "price": "Rp 40.000",
+    "originalPrice": "Rp 65.000",
+    "discountPercent": "38%",
+    "period": "/paket",
     "tag": "Residential IP",
     "iconClass": "fa-solid fa-arrows-rotate",
     "available": true,
-    "hasWarranty": true
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "proxy-starter-1gb",
+        "name": "Starter (1 GB)",
+        "price": "Rp 40.000",
+        "originalPrice": "Rp 65.000",
+        "period": "/1 GB",
+        "specs": [
+          "Kuota 1 GB Bandwidth (150 Credit)",
+          "Untuk uji coba, bot ringan, dan eksperimen awal",
+          "HTTP / HTTPS / SOCKS5 Support",
+          "Masa Aktif 30 Hari"
+        ]
+      },
+      {
+        "id": "proxy-standard-5gb",
+        "name": "Standard (5 GB)",
+        "price": "Rp 95.000",
+        "originalPrice": "Rp 130.000",
+        "period": "/5 GB",
+        "specs": [
+          "Kuota 5 GB Bandwidth (700 Credit)",
+          "Crawler harian, bot media sosial, dan otomasi rutin",
+          "HTTP / HTTPS / SOCKS5 Support",
+          "Masa Aktif 30 Hari"
+        ]
+      },
+      {
+        "id": "proxy-pro-10gb",
+        "name": "Pro (10 GB) - Populer",
+        "price": "Rp 160.000",
+        "originalPrice": "Rp 215.000",
+        "period": "/10 GB",
+        "specs": [
+          "Kuota 10 GB Bandwidth (1.350 Credit)",
+          "Pipeline produksi, AI agent, dan scraping skala besar",
+          "HTTP / HTTPS / SOCKS5 Support",
+          "Masa Aktif 30 Hari"
+        ]
+      },
+      {
+        "id": "proxy-agency-25gb",
+        "name": "Agency (25 GB)",
+        "price": "Rp 350.000",
+        "originalPrice": "Rp 475.000",
+        "period": "/25 GB",
+        "specs": [
+          "Kuota 25 GB Bandwidth (3.250 Credit)",
+          "Scraping paralel tinggi dan riset harga e-commerce",
+          "HTTP / HTTPS / SOCKS5 Support",
+          "Masa Aktif 30 Hari"
+        ]
+      },
+      {
+        "id": "proxy-enterprise-50gb",
+        "name": "Enterprise (50 GB)",
+        "price": "Rp 625.000",
+        "originalPrice": "Rp 875.000",
+        "period": "/50 GB",
+        "specs": [
+          "Kuota 50 GB Bandwidth (6.000 Credit)",
+          "Tarif per GB paling hemat untuk tim & enterprise",
+          "HTTP / HTTPS / SOCKS5 Support",
+          "Masa Aktif 30 Hari"
+        ]
+      }
+    ]
   }
 ]

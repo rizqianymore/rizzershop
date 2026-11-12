@@ -17,7 +17,7 @@ const customerReviews: ReviewItem[] = [
     name: "Dimas Aditya",
     role: "DevOps & Bot Developer",
     rating: 5,
-    product: "VPS Starter 2GB",
+    product: "VPS Low 2GB",
     body: "Order VPS Ubuntu buat deploy bot Telegram langsung sat-set aktif hitungan detik. Bandwidth kenceng, latency rendah banget.",
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80",
   },
