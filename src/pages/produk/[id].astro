@@ -108,6 +108,8 @@ const breadcrumbSchema = {
 	title={pageTitle}
 	description={pageDescription}
 	tags={productKeywords}
+	type="article"
+	section={product.category}
 >
 	<!-- Structured Data SEO Google Rich Snippet -->
 	<script is:inline type="application/ld+json" set:html={JSON.stringify(productSchema)} />
