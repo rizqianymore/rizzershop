@@ -51,6 +51,7 @@ const productSchema = {
 	description: pageDescription,
 	image: 'https://rizzercloud.web.id/image.png',
 	sku: product.id,
+	mpn: product.id,
 	brand: {
 		'@type': 'Brand',
 		name: 'RizzerShop'
@@ -67,7 +68,7 @@ const productSchema = {
 		url: `https://rizzercloud.web.id/produk/${product.id}`,
 		priceCurrency: 'IDR',
 		price: priceAmount,
-		priceValidUntil: '2026-12-31',
+		priceValidUntil: '2027-12-31',
 		availability: product.available !== false ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
 		itemCondition: 'https://schema.org/NewCondition',
 		seller: {
