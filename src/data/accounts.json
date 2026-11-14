@@ -159,22 +159,61 @@
   {
     "id": "acc-chatgpt-business",
     "title": "ChatGPT Business Workspace",
-    "description": "Solusi AI untuk tim dengan privasi data maksimal dan akses model GPT terbaru tanpa batas.",
+    "description": "Solusi AI untuk tim dengan privasi data maksimal dan akses model GPT terbaru tanpa batas. Tersedia pilihan garansi 1 minggu, 2 minggu, hingga full garansi 1 bulan.",
     "category": "Akun Premium",
     "specs": [
       "Workspace Team / Business Domain",
       "Model GPT-4o, o1, Canvas Unlimited",
       "Privasi Data Pelatihan Tidak Disimpan",
+      "Pilihan Garansi 1 Minggu, 2 Minggu, atau Full Garansi",
       "Durasi 1 Bulan"
     ],
-    "price": "Rp 80.000",
+    "price": "Rp 120.000",
     "originalPrice": "Rp 320.000",
-    "discountPercent": "75%",
+    "discountPercent": "62%",
     "period": "/1 bulan",
     "tag": "Business AI",
     "iconClass": "fa-solid fa-briefcase",
     "available": true,
-    "hasWarranty": false
+    "hasWarranty": true,
+    "variants": [
+      {
+        "id": "chatgpt-1m-full-garansi",
+        "name": "1 Bulan (Full Garansi)",
+        "price": "Rp 170.000",
+        "period": "/1 bulan",
+        "specs": [
+          "Masa Aktif 1 Bulan Penuh",
+          "Full Garansi 30 Hari Replace",
+          "Model GPT-4o, o1, Canvas Unlimited",
+          "Privasi Data Terjamin"
+        ]
+      },
+      {
+        "id": "chatgpt-1m-2w-garansi",
+        "name": "1 Bulan (Garansi 2 Minggu)",
+        "price": "Rp 150.000",
+        "period": "/1 bulan",
+        "specs": [
+          "Masa Aktif 1 Bulan Penuh",
+          "Garansi 14 Hari (2 Minggu)",
+          "Model GPT-4o, o1, Canvas Unlimited",
+          "Privasi Data Terjamin"
+        ]
+      },
+      {
+        "id": "chatgpt-1m-1w-garansi",
+        "name": "1 Bulan (Garansi 1 Minggu)",
+        "price": "Rp 120.000",
+        "period": "/1 bulan",
+        "specs": [
+          "Masa Aktif 1 Bulan Penuh",
+          "Garansi 7 Hari (1 Minggu)",
+          "Model GPT-4o, o1, Canvas Unlimited",
+          "Privasi Data Terjamin"
+        ]
+      }
+    ]
   },
   {
     "id": "acc-netflix",
