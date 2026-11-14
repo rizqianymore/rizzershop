@@ -2,19 +2,20 @@
   {
     "id": "vps-premium-cloud",
     "title": "Cloud VPS High Private",
-    "description": "Cloud VPS High Tier menggunakan Provider Khusus (Dedicated Resource & Jalur Prioritas). Sifatnya lebih mahal untuk stabilitas ekstra. Catatan: Kondisi cloud sedang rawan, estimasi durasi & ketahanan kualitas rata-rata maks ~20 harian.",
+    "description": "Cloud VPS High Tier menggunakan Provider Khusus (Dedicated Resource & Jalur Prioritas). Sifatnya lebih mahal untuk jaminan stabilitas ekstra, masa aktif durasi penuh 30 hari pas & garansi replace resmi.",
     "category": "Premium VPS",
     "specs": [
       "Provider Khusus & Dedicated CPU Core",
+      "Durasi Penuh 30 Hari Pas (Bukan Rawan)",
       "KVM Virtualization & High Performance",
       "NVMe SSD Storage Cepat",
       "Bandwidth Unmetered",
       "Pilihan OS Linux Lengkap",
-      "Kondisi Rawan: Durasi kualitas maks ~20 hari"
+      "Garansi Penuh 30 Hari & SLA Uptime 99.9%"
     ],
     "price": "Rp 75.000",
     "period": "/bulan",
-    "tag": "Provider Khusus",
+    "tag": "Durasi Penuh 30 Hari",
     "iconClass": "fa-solid fa-bolt",
     "available": true,
     "hasWarranty": true,
@@ -73,19 +74,20 @@
   {
     "id": "rdp-premium-cloud",
     "title": "Windows RDP High Dedicated",
-    "description": "Desktop Windows Cloud High Tier performa tinggi dengan Provider Khusus, CPU unshared, dan bandwidth unmetered. Sifatnya lebih mahal untuk stabilitas ekstra. Catatan: Kondisi cloud sedang rawan, estimasi durasi & ketahanan kualitas rata-rata maks ~20 harian.",
+    "description": "Desktop Windows Cloud High Tier performa tinggi dengan Provider Khusus, CPU unshared, dan bandwidth unmetered. Sifatnya lebih mahal untuk jaminan stabilitas ekstra, durasi penuh 30 hari pas & garansi resmi.",
     "category": "Premium VPS",
     "specs": [
       "Provider Khusus & Dedicated CPU Core",
+      "Durasi Penuh 30 Hari Pas (Bukan Rawan)",
       "Windows Server 2022 / Windows 11 Pro",
       "NVMe SSD Storage & High IOPS",
       "Bandwidth Unmetered & IP Publik",
       "Full Administrator Remote Desktop",
-      "Kondisi Rawan: Durasi kualitas maks ~20 hari"
+      "Garansi Penuh 30 Hari"
     ],
     "price": "Rp 95.000",
     "period": "/bulan",
-    "tag": "Provider Khusus",
+    "tag": "Durasi Penuh 30 Hari",
     "iconClass": "fa-brands fa-windows",
     "available": true,
     "hasWarranty": true,

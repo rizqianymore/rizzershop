@@ -31,31 +31,32 @@ const initialSpecs = (initialVariant && initialVariant.specs && initialVariant.s
   <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-start">
     
     <!-- Kolom Kiri: Info & Spesifikasi Produk -->
-    <div class="md:col-span-7 flex flex-col justify-between rounded-lg bg-zinc-950 p-6">
+    <div class="md:col-span-7 flex flex-col justify-between rounded-xl border border-zinc-800/80 bg-zinc-950/70 p-6 backdrop-blur-sm shadow-xl shadow-black/40">
       <div>
         <!-- Header Badge -->
         <div class="flex items-center justify-between mb-4">
-          <span class="inline-flex items-center rounded border border-blue-500/30 bg-blue-950/40 px-2 py-0.5 text-[10px] font-normal text-blue-400">
+          <span class="inline-flex items-center rounded border border-blue-500/30 bg-blue-950/40 px-2.5 py-0.5 text-[10px] font-normal text-blue-400">
             {product.category}
           </span>
           {product.tag && (
-            <span class="inline-flex items-center rounded bg-blue-600 px-2 py-0.5 text-[10px] font-medium text-white">
+            <span class="inline-flex items-center rounded bg-gradient-to-r from-blue-600 to-indigo-600 px-2.5 py-0.5 text-[10px] font-medium text-white shadow-sm">
               {product.tag}
             </span>
           )}
         </div>
 
         <!-- Title & Icon -->
-        <div class="flex items-center gap-3 mb-4">
-          <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-black text-blue-400">
+        <div class="flex items-center gap-3.5 mb-4">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 text-blue-400 shadow-inner">
             <i class={`${product.iconClass || 'fa-solid fa-server'} text-xl`}></i>
           </div>
           <div>
-            <h1 class="text-lg font-bold text-white">
+            <h1 class="text-xl font-bold text-white tracking-tight">
               {product.title}
             </h1>
-            <div class="text-xs text-zinc-400 mt-0.5">
-              Aktivasi Instan &bull; Jaminan Layanan
+            <div class="text-xs text-zinc-400 mt-1 flex items-center gap-2">
+              <span class="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Aktivasi Instan &bull; Jaminan Layanan</span>
             </div>
           </div>
         </div>
@@ -68,14 +69,14 @@ const initialSpecs = (initialVariant && initialVariant.specs && initialVariant.s
         )}
 
         <!-- List Spesifikasi / Fitur -->
-        <div class="border-t border-zinc-900/80 pt-5">
+        <div class="border-t border-zinc-900/90 pt-5">
           <h2 class="text-xs font-semibold text-zinc-200 mb-3" id="specs-title">
             Spesifikasi & Detail {initialVariant ? `(${initialVariant.name})` : ''}:
           </h2>
-          <ul class="space-y-2" id="specs-list">
+          <ul class="space-y-2.5" id="specs-list">
             {initialSpecs.map((spec) => (
               <li class="flex items-center gap-2 text-xs text-zinc-300">
-                <svg class="h-3.5 w-3.5 text-blue-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg class="h-4 w-4 text-blue-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 <span>{spec}</span>
               </li>
             ))}
@@ -85,13 +86,13 @@ const initialSpecs = (initialVariant && initialVariant.specs && initialVariant.s
     </div>
 
     <!-- Kolom Kanan: Beli Langsung / Ringkasan Harga -->
-    <div class="md:col-span-5 rounded-lg bg-zinc-950 p-6 flex flex-col justify-between">
+    <div class="md:col-span-5 rounded-xl border border-zinc-800/80 bg-zinc-950/70 p-6 backdrop-blur-sm shadow-xl shadow-black/40 flex flex-col justify-between">
       <div>
-        <div class="text-xs font-medium text-blue-500 mb-1">Pemesanan</div>
+        <div class="text-xs font-medium text-blue-400 mb-1">Pemesanan</div>
         <h3 class="text-sm font-semibold text-white mb-4">Ringkasan Order</h3>
 
         <!-- Price Box -->
-        <div class="rounded bg-black p-4 mb-4 border border-zinc-900">
+        <div class="rounded-lg bg-black/80 p-4 mb-4 border border-zinc-800/80 shadow-inner">
           <div class="flex items-center justify-between">
             <div class="text-[11px] text-zinc-500">Harga Layanan</div>
             {product.discountPercent && (
@@ -174,16 +175,16 @@ const initialSpecs = (initialVariant && initialVariant.specs && initialVariant.s
       </div>
 
       <!-- Action Order Button -->
-      <div class="border-t border-zinc-900/80 pt-4 mt-2">
+      <div class="border-t border-zinc-900/90 pt-4 mt-2">
         <button
           type="button"
           id="btn-buy-whatsapp"
-          class="w-full inline-flex items-center justify-center gap-1.5 rounded-sm bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-blue-500 active:scale-95 shadow cursor-pointer"
+          class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-3 text-xs font-semibold text-white transition-all duration-200 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-600/25 active:scale-95 shadow cursor-pointer"
         >
           <span>Beli via WhatsApp</span>
-          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </button>
-        <p class="mt-2 text-center text-[10px] text-zinc-500">
+        <p class="mt-2.5 text-center text-[10px] text-zinc-500">
           Aktivasi cepat &bull; {product.hasWarranty === false ? 'Non-garansi' : 'Garansi replace'} &bull; Bayar via QRIS/Bank
         </p>
       </div>

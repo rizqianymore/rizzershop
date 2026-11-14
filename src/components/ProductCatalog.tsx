@@ -115,7 +115,7 @@ export function ProductCatalog({ products }: ProductCatalogProps) {
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="group flex flex-col justify-between rounded-lg bg-zinc-950 p-5 transition hover:bg-zinc-900/60 min-h-[160px] h-full"
+            className="group relative flex flex-col justify-between rounded-xl border border-zinc-800/80 bg-zinc-950/70 p-5 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:bg-zinc-900/40 hover:shadow-lg hover:shadow-blue-500/5 min-h-[160px] h-full"
           >
             <div className="flex-1">
               {/* Header */}
@@ -124,7 +124,7 @@ export function ProductCatalog({ products }: ProductCatalogProps) {
                   {product.category}
                 </Badge>
                 {product.tag && (
-                  <Badge className="bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-medium px-2 py-0.5 rounded">
+                  <Badge className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-[10px] font-medium px-2 py-0.5 rounded shadow-sm">
                     {product.tag}
                   </Badge>
                 )}
@@ -132,10 +132,10 @@ export function ProductCatalog({ products }: ProductCatalogProps) {
 
               {/* Title & Icon */}
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-black text-blue-400 group-hover:text-blue-300 transition-colors">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-zinc-900/90 border border-zinc-800 text-blue-400 group-hover:scale-105 group-hover:text-blue-300 group-hover:border-blue-500/30 transition-all duration-300">
                   <i className={`${product.iconClass || 'fa-solid fa-server'} text-lg`}></i>
                 </div>
-                <h3 className="text-sm font-semibold text-white group-hover:text-blue-200 transition-colors">
+                <h3 className="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors">
                   {product.title}
                 </h3>
               </div>
@@ -149,7 +149,7 @@ export function ProductCatalog({ products }: ProductCatalogProps) {
             </div>
 
             {/* Price & Order Action Link */}
-            <div className="mt-6 flex items-center justify-between border-t border-zinc-900/80 pt-4">
+            <div className="mt-6 flex items-center justify-between border-t border-zinc-900/90 pt-4">
               <div className="flex flex-col">
                 {product.originalPrice && (
                   <div className="flex items-center gap-1.5 mb-0.5">
@@ -164,7 +164,7 @@ export function ProductCatalog({ products }: ProductCatalogProps) {
                   </div>
                 )}
                 <div className="flex flex-wrap items-baseline gap-1">
-                  <span className="text-base font-bold text-white tracking-tight">{product.price}</span>
+                  <span className="text-base font-bold text-white tracking-tight group-hover:text-blue-200 transition-colors">{product.price}</span>
                   {product.period && (
                     <span className="text-[11px] text-zinc-500 font-normal whitespace-nowrap">{product.period}</span>
                   )}
@@ -173,7 +173,7 @@ export function ProductCatalog({ products }: ProductCatalogProps) {
 
               <a
                 href={`/produk/${product.id}`}
-                className="inline-flex items-center gap-1.5 rounded-sm bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition hover:bg-blue-500 active:scale-95 shadow"
+                className="inline-flex items-center gap-1.5 rounded-md bg-blue-600 px-3.5 py-1.5 text-xs font-semibold text-white transition-all duration-200 hover:bg-blue-500 hover:shadow-md hover:shadow-blue-600/20 active:scale-95 shadow"
               >
                 <span>Beli</span>
               </a>

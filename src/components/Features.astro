@@ -26,27 +26,31 @@ const features = [
 ];
 ---
 
-<!-- 1 Window Fullscreen Features Section (No separator border) -->
-<section id="categories" class="flex min-h-screen w-full flex-col justify-center bg-black px-4 py-12 sm:px-6">
-	<div class="mx-auto w-full max-w-6xl">
-		<div class="text-center max-w-2xl mx-auto mb-10">
-			<!-- Mini Title (Normal-case, no uppercase) -->
-			<div class="text-xs font-medium text-blue-500 mb-1">Keunggulan Layanan</div>
-			<h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Kenapa Beli di RizzerShop?</h2>
-			<p class="mt-2 text-xs sm:text-sm text-zinc-400">Pusat layanan server VPS, RDP, dan akun premium terpercaya & transparan.</p>
+<!-- 1 Window Fullscreen Features Section -->
+<section id="categories" class="flex min-h-screen w-full flex-col justify-center bg-black px-4 py-12 sm:px-6 relative overflow-hidden">
+	<div class="mx-auto w-full max-w-6xl relative z-10">
+		<div class="text-center max-w-2xl mx-auto mb-12">
+			<!-- Mini Title -->
+			<div class="inline-flex items-center gap-1.5 rounded-full border border-blue-500/30 bg-blue-950/40 px-2.5 py-0.5 text-[11px] font-medium text-blue-400 mb-2.5">
+				<span>Keunggulan Layanan</span>
+			</div>
+			<h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl bg-gradient-to-r from-white via-zinc-100 to-zinc-400 bg-clip-text text-transparent">Kenapa Beli di RizzerShop?</h2>
+			<p class="mt-2.5 text-xs sm:text-sm text-zinc-400">Pusat infrastruktur Cloud VPS, RDP Botting, dan lisensi akun premium terpercaya & transparan.</p>
 		</div>
 
 		<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
 			{features.map((item) => {
 				const IconComponent = item.icon;
 				return (
-					<Card className="border-0 bg-zinc-950 p-5 transition hover:bg-zinc-900/60 shadow-none">
-						<div class="flex h-9 w-9 items-center justify-center rounded-md bg-black text-blue-400 mb-3">
-							<IconComponent className="h-4 w-4" />
+					<div class="group relative flex flex-col justify-between rounded-xl border border-zinc-800/80 bg-zinc-950/70 p-6 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/50 hover:bg-zinc-900/40 hover:shadow-lg hover:shadow-blue-500/5">
+						<div>
+							<div class="flex h-11 w-11 items-center justify-center rounded-lg bg-zinc-900/90 border border-zinc-800 text-blue-400 mb-4 group-hover:scale-110 group-hover:text-blue-300 group-hover:border-blue-500/30 transition-all duration-300">
+								<IconComponent className="h-5 w-5" />
+							</div>
+							<h3 class="text-sm font-semibold text-white group-hover:text-blue-200 transition-colors">{item.title}</h3>
+							<p class="mt-2 text-xs text-zinc-400 leading-relaxed">{item.desc}</p>
 						</div>
-						<h3 class="text-sm font-semibold text-white">{item.title}</h3>
-						<p class="mt-2 text-xs text-zinc-400 leading-relaxed">{item.desc}</p>
-					</Card>
+					</div>
 				);
 			})}
 		</div>

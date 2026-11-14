@@ -26,9 +26,9 @@
     {
       "id": "premium",
       "name": "High Private Cloud (Provider Khusus)",
-      "tag": "Provider Khusus",
-      "desc": "High Tier menggunakan Provider Khusus (Dedicated Resources, NVMe SSD). Sifatnya lebih mahal untuk stabilitas ekstra. Catatan: Kondisi sedang rawan, estimasi durasi maks ~20 harian.",
-      "warranty": "Kondisi Rawan: Estimasi kualitas maks ~20 hari"
+      "tag": "Durasi 30 Hari Pas",
+      "desc": "High Tier menggunakan Provider Khusus (Dedicated Resources, NVMe SSD). Sifatnya lebih mahal karena terjamin durasi penuh 30 hari pas & bebas kendala rawan.",
+      "warranty": "Garansi Penuh 30 Hari & SLA Uptime 99.9%"
     },
     {
       "id": "dedicated",

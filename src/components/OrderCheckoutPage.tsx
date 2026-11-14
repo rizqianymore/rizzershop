@@ -254,8 +254,8 @@ export function OrderCheckoutPage({ products }: OrderCheckoutPageProps) {
                     <span>Perhatian: Kondisi Cloud Sedang Rawan</span>
                   </div>
                   <p className="text-zinc-300 leading-relaxed text-[11px]">
-                    Karena kondisi jaringan dan provider cloud global yang sedang rawan, estimasi durasi masa aktif dan ketahanan kualitas rata-rata berkisar <strong>maksimal ~20 harian</strong>.
-                    Untuk <strong>Tier High</strong> harga lebih tinggi karena menggunakan alokasi <strong>Provider Khusus</strong> guna menjamin kestabilan lebih prima.
+                    Khusus <strong>Tier Low</strong>: Karena kondisi cloud global yang sedang rawan, estimasi durasi rata-rata berkisar <strong>maksimal ~20 harian</strong>.<br />
+                    Sedangkan <strong>Tier High (Provider Khusus)</strong>: Harga lebih tinggi karena terjamin <strong>durasi penuh 30 hari pas & bergaransi resmi</strong>.
                   </p>
                 </div>
 
